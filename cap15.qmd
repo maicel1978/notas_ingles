@@ -1,0 +1,109 @@
+---
+title: " CAPÍTULO 15 - Relative Clauses"
+---
+
+*Las frases que dan información extra*
+
+---
+
+> ### 🎯 Idea Central
+> Las relative clauses añaden información sobre un sustantivo
+> usando pronombres relativos.
+> La gran pregunta es: ¿esa información es **ESENCIAL** o **EXTRA**?
+
+---
+
+## 📐 Los Pronombres Relativos
+
+```
+WHO    →  personas
+WHICH  →  cosas / animales
+THAT   →  personas o cosas (uso informal/coloquial)
+WHOSE  →  posesión (cuyo/a — de quien / de lo que)
+WHERE  →  lugares
+WHEN   →  tiempo
+WHY    →  razón (solo con "the reason")
+```
+
+---
+
+## 📐 Defining vs Non-Defining
+
+---
+
+#### 🔵 DEFINING — Información ESENCIAL (sin comas)
+
+```
+"The woman WHO called you is my sister."
+→  Sin esa información, no sabes de qué mujer hablas.
+→  La cláusula define / identifica al sustantivo.
+→  NO lleva comas.
+→  Puedes usar THAT en lugar de WHO o WHICH.
+→  Puedes OMITIR el pronombre si es objeto:
+   "The book (that) I bought is great."  ✅
+```
+
+---
+
+### 🔴 NON-DEFINING — Información EXTRA (con comas)
+
+```
+"My sister, WHO lives in London, called you."
+→  Ya sabes de qué hermana hablas. La info es adicional.
+→  Entre comas. Si se elimina, la frase sigue siendo correcta.
+→  NO puedes usar THAT.
+→  NO puedes omitir el pronombre relativo.
+→  En lenguaje oral → pausa antes y después.
+```
+
+---
+
+## 💡 Tabla Comparativa
+
+| | Defining | Non-Defining |
+|--|----------|--------------|
+| Comas | ❌ Sin comas | ✅ Con comas |
+| THAT | ✅ Se puede usar | ❌ No se puede |
+| Omitir pronombre | ✅ Si es objeto | ❌ Nunca |
+| Sin ella, la frase... | pierde el sentido | sigue siendo correcta |
+
+---
+
+## ✅ Ejemplos Comparados
+
+```
+DEFINING:
+"The man who stole the car was arrested."
+→  (qué hombre — el que robó el coche)
+
+NON-DEFINING:
+"John, who stole the car, was arrested."
+→  (ya sabemos que es John, añadimos info extra)
+
+DEFINING:
+"The book that I recommended is a bestseller."
+
+NON-DEFINING:
+"'Don Quixote', which was written by Cervantes, is a classic."
+```
+
+---
+
+## ⚠️ Errores Frecuentes
+
+```
+❌  The book which I bought it is great.
+✅  The book which I bought is great.
+    (el relativo YA hace la función de objeto, no añadas "it")
+
+❌  My brother, that lives in Paris, is a chef.
+✅  My brother, who lives in Paris, is a chef.
+    (non-defining → no uses THAT)
+
+❌  The city where I visited was beautiful.
+✅  The city which/that I visited was beautiful.
+    (WHERE = en donde, aquí es objeto directo, no lugar)
+    ✅  The city where I was born was beautiful.  (aquí sí es correcto)
+```
+
+

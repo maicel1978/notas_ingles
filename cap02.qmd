@@ -1,0 +1,87 @@
+---
+title: "CAPÍTULO 2 Los Pronombres"
+---
+
+*Las personas del drama inglés*
+
+---
+
+> ### 🎯 Idea Central
+> En inglés **SIEMPRE** necesitas el pronombre.
+> No puedes esconderte como en español.
+> *"Estoy cansado"* → ❌ en inglés → ✅ **I am tired**
+
+---
+
+## 📐 La Tabla Maestra de Pronombres
+
+| Español | Sujeto | Objeto | Posesivo Adj. | Posesivo Pron. | Reflexivo |
+|---------|--------|--------|---------------|----------------|-----------|
+| yo | **I** | me | my | mine | myself |
+| tú | **you** | you | your | yours | yourself |
+| él | **he** | him | his | his | himself |
+| ella | **she** | her | her | hers | herself |
+| ello | **it** | it | its | its | itself |
+| nosotros | **we** | us | our | ours | ourselves |
+| vosotros/uds | **you** | you | your | yours | yourselves |
+| ellos | **they** | them | their | theirs | themselves |
+
+---
+
+## 💡 Truco — Adjetivo vs Pronombre Posesivo
+
+```
+ADJETIVO POSESIVO  →  acompaña a un nombre
+"my car"  /  "her house"  /  "their dog"
+   ↑               ↑              ↑
+ siempre hay un nombre después
+
+PRONOMBRE POSESIVO  →  va solo, sustituye al nombre
+"The car is mine."  /  "The house is hers."
+                ↑                      ↑
+             va solo, sin nombre después
+```
+
+> 🧠 **Regla rápida:**
+> ¿Puedes poner un **NOMBRE** después? → Adjetivo posesivo
+> ¿Va **SOLO**? → Pronombre posesivo
+
+---
+
+## ✅ Ejemplos Comparados
+
+```
+my book     ←→   The book is mine.
+your keys   ←→   The keys are yours.
+his car     ←→   The car is his.
+her idea    ←→   The idea is hers.
+our house   ←→   The house is ours.
+their dog   ←→   The dog is theirs.
+```
+
+---
+
+## ⚠️ Errores Típicos
+
+```
+❌  Is my book.            →  ✅  It is my book.
+❌  The book is my.        →  ✅  The book is mine.
+❌  I hurt me.             →  ✅  I hurt myself.
+❌  She looked herself in the mirror.  →  ✅  (esto sí es correcto)
+```
+
+---
+
+## 🔥 Tip para el Examen
+
+> **IT** hace mucho trabajo en inglés.
+> Lo usamos para: tiempo, distancia, temperatura y situaciones:
+> ```
+> It is raining.          →  Está lloviendo.
+> It is far.              →  Está lejos.
+> It is cold.             →  Hace frío.
+> It is Monday.           →  Es lunes.
+> ```
+
+
+

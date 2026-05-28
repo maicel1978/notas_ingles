@@ -1,0 +1,102 @@
+project:
+  type: book
+  output-dir: _book
+
+lang: es
+
+book:
+  title: "El libro de notas de inglés"
+  subtitle: "De A1 a C1 — El libro que ojalá hubiera existido antes"
+  author: "Maicel Maicel"
+  date: today
+
+  cover-image: images/cover.png
+
+  page-navigation: true
+  search: true
+
+  downloads:
+    - pdf
+    - epub
+
+  chapters:
+    - index.qmd
+    - intro.qmd
+
+    - part: "📘 Parte 1: Nivel A1"
+      chapters:
+        - cap01.qmd
+        - cap02.qmd
+        - cap03.qmd
+        - cap04.qmd
+
+    - part: "📗 Parte 2: Nivel A2"
+      chapters:
+        - cap05.qmd
+        - cap06.qmd
+        - cap07.qmd
+
+    - part: "📙 Parte 3: Nivel B1"
+      chapters:
+        - cap08.qmd
+        - cap09.qmd
+        - cap10.qmd
+        - cap11.qmd
+        - cap12.qmd
+        - cap13.qmd
+
+    - part: "📕 Parte 4: Nivel B2"
+      chapters:
+        - cap14.qmd
+        - cap15.qmd
+        - cap16.qmd
+        - cap17.qmd
+        - cap18.qmd
+        - cap19.qmd
+        - cap20.qmd
+        - cap21.qmd
+        - cap22.qmd
+
+    - summary.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: darkly
+    toc: true
+    toc-depth: 3
+    number-sections: false
+    number-depth: 2
+    smooth-scroll: true
+    code-copy: true
+    code-overflow: wrap
+    css: styles.css
+
+  epub:
+    toc: true
+    cover-image: images/cover.png
+
+  pdf:
+    documentclass: scrbook
+    pdf-engine: lualatex
+    toc: true
+    number-sections: true
+    number-depth: 2
+    colorlinks: true
+    geometry:
+      - top=25mm
+      - bottom=25mm
+      - left=25mm
+      - right=25mm
+    include-in-header:
+      text: |
+        \usepackage{emoji}
+
+editor: visual
+
+execute:
+  freeze: auto

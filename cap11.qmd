@@ -1,0 +1,168 @@
+---
+title: "CAPÍTULO 11 Modal Verbs"
+---
+
+
+*Los verbos con personalidad propia*
+
+---
+
+> ### 🎯 Idea Central
+> Los modales no expresan acciones.
+> Expresan tu **ACTITUD** hacia la acción:
+> obligación, posibilidad, permiso, capacidad, consejo.
+
+---
+
+## 📐 Reglas Universales de los Modales
+
+```
+1.  NUNCA llevan -S en tercera persona:
+    ❌  He cans swim.    →  ✅  He can swim.
+
+2.  NUNCA van con TO (excepto: ought to, have to, used to):
+    ❌  She must to go.  →  ✅  She must go.
+
+3.  SIEMPRE van seguidos de VERBO BASE:
+    ❌  I should studied. →  ✅  I should study.
+
+4.  Forman negación directamente con NOT:
+    ❌  I don't can swim. →  ✅  I can't swim.
+```
+
+---
+
+## 📐 La Familia Completa de Modales
+
+---
+
+### 🔵 CAN / COULD — Habilidad y Permiso
+
+```
+CAN (presente / informal):
+"I can swim."                →  Sé nadar.
+"Can I open the window?"     →  ¿Puedo abrir la ventana? (informal)
+
+COULD (pasado / formal / tentativo):
+"I could swim when I was 5." →  Sabía nadar cuando tenía 5 años.
+"Could I use your phone?"    →  ¿Podría usar tu teléfono? (formal)
+"Could you help me?"         →  ¿Podrías ayudarme? (petición educada)
+```
+
+---
+
+### 🟡 MUST / HAVE TO — Obligación
+
+```
+MUST  →  obligación INTERNA (viene de ti mismo)
+"I must study."              →  Debo estudiar. (me lo digo a mí mismo)
+"You must try this!"         →  ¡Tienes que probarlo! (recomendación fuerte)
+
+HAVE TO  →  obligación EXTERNA (reglas, otras personas)
+"I have to wear a uniform."  →  Tengo que llevar uniforme. (reglas del trabajo)
+"She has to be home by 11."  →  Tiene que estar en casa. (sus padres lo dicen)
+```
+
+> 🧠 **Truco definitivo:**
+> **MUST** = viene de **MÍ**
+> **HAVE TO** = viene de **FUERA**
+
+---
+
+### 🔴 MUSTN'T vs DON'T HAVE TO — ¡Los más confundidos!
+
+```
+┌────────────────────────────────────────────────────────┐
+│  MUSTN'T  =  PROHIBICIÓN  (NO debes hacer esto)        │
+│  "You mustn't smoke here."  →  Está PROHIBIDO fumar.   │
+│                                                         │
+│  DON'T HAVE TO  =  NO ES NECESARIO (pero puedes)       │
+│  "You don't have to come."  →  No tienes que venir.    │
+│                                (es opcional, decides tú)│
+└────────────────────────────────────────────────────────┘
+```
+
+> ⚠️ **Este error puede ser catastrófico en contexto real:**
+> ```
+> Situación: la entrada es gratuita.
+> ❌  "You mustn't pay."     →  suena como que está PROHIBIDO pagar
+> ✅  "You don't have to pay."  →  no es necesario pagar
+> ```
+
+---
+
+### 🟢 SHOULD / OUGHT TO — Consejo y Recomendación
+
+```
+SHOULD  →  consejo, recomendación, opinión
+"You should see a doctor."    →  Deberías ver a un médico.
+"Should I tell her?"          →  ¿Debería decírselo?
+
+OUGHT TO  →  igual que should, ligeramente más formal
+"You ought to apologize."     →  Deberías disculparte.
+"They ought to arrive soon."  →  Deberían llegar pronto.
+```
+
+---
+
+### ⚪ MAY / MIGHT — Posibilidad
+
+```
+MAY    →  posibilidad más alta (~50% o más)
+"It may rain today."          →  Puede que llueva hoy.
+"May I come in?"              →  ¿Puedo pasar? (permiso MUY formal)
+
+MIGHT  →  posibilidad más baja (~30% o menos)
+"I might go to the party."    →  Igual voy a la fiesta (no estoy seguro).
+"She might be late."          →  Puede que llegue tarde.
+```
+
+> 🧠 **Truco:** MIGHT = **Maybe I will, maybe I won't**
+
+---
+
+## 📐 Tabla Resumen de Modales
+
+| Modal | Función | Ejemplo |
+|-------|---------|---------|
+| **can** | habilidad / permiso informal | I can drive. |
+| **could** | habilidad pasada / petición formal | Could you help? |
+| **must** | obligación interna / deducción fuerte | You must be tired. |
+| **have to** | obligación externa | I have to work. |
+| **mustn't** | prohibición absoluta | You mustn't lie. |
+| **don't have to** | no es necesario | You don't have to pay. |
+| **should** | consejo / recomendación | You should rest. |
+| **ought to** | consejo formal | You ought to apologize. |
+| **may** | posibilidad alta / permiso formal | It may snow. |
+| **might** | posibilidad baja | I might come. |
+| **would** | condicional / petición educada | Would you like...? |
+| **shall** | sugerencia / ofrecimiento (formal) | Shall we go? |
+
+---
+
+## 🔥 Modales Perfectos — Nivel B2 Puro
+
+> **Estructura:** MODAL + HAVE + PARTICIPIO PASADO
+> Usados para hacer **deducciones, críticas y especulaciones sobre el pasado.**
+
+```
+MUST HAVE + participio     →  deducción casi segura sobre el pasado
+"She must have forgotten." →  Debe haber olvidado. (estoy casi seguro)
+
+CAN'T HAVE + participio    →  imposibilidad en el pasado
+"He can't have said that." →  No puede haber dicho eso. (imposible)
+
+SHOULD HAVE + participio   →  crítica o lamento sobre el pasado
+"I should have studied."   →  Debería haber estudiado. (pero no lo hice)
+
+COULD HAVE + participio    →  posibilidad no aprovechada
+"You could have told me!"  →  ¡Podrías haberme dicho! (pero no lo hiciste)
+
+MIGHT HAVE + participio    →  posibilidad en el pasado
+"She might have missed it."→  Puede que lo haya perdido.
+
+NEEDN'T HAVE + participio  →  hiciste algo que no era necesario
+"You needn't have cooked." →  No hacía falta que cocinaras.
+```
+
+

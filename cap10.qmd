@@ -1,0 +1,72 @@
+---
+title: "CAPÍTULO 10 Past Perfect"
+---
+
+*El pasado del pasado*
+
+---
+
+> ### 🎯 Idea Central
+> Cuando ya estás hablando del pasado
+> y necesitas referirte a algo que pasó **AÚN ANTES.**
+> Es el **flashback** gramatical del inglés.
+
+---
+
+## 📐 La Fórmula
+
+```
+Sujeto  +  HAD  +  PARTICIPIO PASADO
+(HAD es igual para todos los sujetos — nunca cambia)
+
+(+)  She had left before I arrived.
+(-)  He hadn't eaten when we called.
+(?)  Had they finished when you got there?
+```
+
+---
+
+## 💡 Línea de Tiempo Visual
+
+```
+PASADO  ←──────────────────────────────────────→  PRESENTE
+
+    HAD FINISHED          ARRIVED
+           │                 │
+    ───────●─────────────────●──────────────────▶
+    (pasado del          (pasado)
+      pasado)
+
+"When I arrived, the party had already finished."
+ → Primero terminó la fiesta, DESPUÉS llegué yo.
+```
+
+---
+
+## ✅ Ejemplos en Contexto
+
+```
+"She was tired because she hadn't slept."
+→ Primero no durmió → después estaba cansada.
+
+"He recognized her because he had seen her before."
+→ Primero la vio → después la reconoció.
+
+"By the time we arrived, they had already left."
+→ Se fueron antes de que llegáramos.
+
+"I realized I had forgotten my wallet."
+→ Me di cuenta de que lo había olvidado (antes).
+```
+
+---
+
+## 🔥 Tip para el Examen
+
+> El Past Perfect es **CLAVE** en:
+> - **Reported Speech** *(ver Capítulo 13)*
+> - **Third Conditional** *(ver Capítulo 14)*
+> - **Narrativa avanzada** en writing
+>
+> Si dominas el Past Perfect, dominas el B2.
+

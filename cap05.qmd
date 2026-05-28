@@ -1,0 +1,118 @@
+---
+title: "CAPÍTULO 5 Past Simple"
+---
+
+
+*El tiempo del storytelling*
+
+---
+
+> ### 🎯 Idea Central
+> Acción **completada** en el pasado con **tiempo definido.**
+> La película ya terminó. No hay conexión con el presente.
+
+---
+
+## 📐 La Fórmula
+
+```
+POSITIVO:  Sujeto  +  VERBO PASADO (regular: +ED / irregular: forma 2)
+NEGATIVO:  Sujeto  +  DIDN'T  +  VERBO BASE
+PREGUNTA:  DID  +  Sujeto  +  VERBO BASE?
+```
+
+---
+
+## 💡 Truco — DID Roba el Pasado
+
+```
+She worked.              →  pasado en el verbo
+Did she work?            →  DID tiene el pasado, verbo vuelve a base
+Did she worked?          ❌  doble pasado = error grave
+She didn't work.         ✅  DIDN'T tiene el pasado
+She didn't worked.       ❌
+```
+
+---
+
+## 💡 Los 3 Sonidos del -ED
+
+```
+/t/   →  después de sonidos sordos (p,k,f,s,sh,ch):
+         worked /wɜːkt/,  stopped /stɒpt/,  watched /wɒtʃt/
+
+/d/   →  después de sonidos sonoros (b,g,v,z,m,n,l,r):
+         lived /lɪvd/,  called /kɔːld/,  loved /lʌvd/
+
+/ɪd/  →  después de T y D (necesitas una vocal para separar):
+         wanted /ˈwɒntɪd/,  needed /ˈniːdɪd/,  decided /dɪˈsaɪdɪd/
+```
+
+---
+
+## 📐 Los Verbos Irregulares — Por Familias
+
+> 💡 **No los memorices uno por uno. Agrúpalos por patrones.**
+
+**Familia 1 — Los que no cambian:**
+```
+cut → cut    put → put    hit → hit    let → let    set → set
+🧠  "Se quedaron como estaban, como tú cuando te dicen que hay tarea"
+```
+
+**Familia 2 — Cambian la vocal del medio:**
+```
+run → ran       come → came      become → became
+sit → sat       win → won        swim → swam
+drink → drank   sing → sang      ring → rang       begin → began
+drive → drove   ride → rode      write → wrote     rise → rose
+```
+
+**Familia 3 — La familia -ought / -aught:**
+```
+buy   → bought      think → thought     bring → brought
+catch → caught      teach → taught      fight → fought
+🧠  "Los que compramos, pensamos y traemos = familia BOUGHT"
+```
+
+**Familia 4 — Terminan en -eld, -ept, -elt:**
+```
+hold → held    keep → kept    feel → felt
+sell → sold    tell → told    build → built
+```
+
+**Los 20 Imprescindibles — Memoriza estos sí o sí:**
+```
+be   → was/were    have → had       do   → did
+go   → went        say  → said      get  → got
+make → made        know → knew      take → took
+see  → saw         come → came      give → gave
+find → found       tell → told      feel → felt
+leave → left       keep → kept      meet → met
+lose → lost        choose → chose
+```
+
+---
+
+## ✅ Señales de Tiempo
+
+```
+yesterday           →  ayer
+last week/month     →  la semana/el mes pasado
+...ago              →  hace...  ("two years ago" = hace dos años)
+in 1990             →  en 1990
+when I was a child  →  cuando era niño
+that day            →  ese día
+```
+
+---
+
+## ⚠️ Errores Típicos
+
+```
+❌  I did go to the cinema yesterday.     →  ✅  I went to the cinema yesterday.
+❌  She didn't went home.                →  ✅  She didn't go home.
+❌  Did he came early?                   →  ✅  Did he come early?
+```
+
+

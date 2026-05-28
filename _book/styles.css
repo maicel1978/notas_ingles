@@ -1,0 +1,63 @@
+/* Mejor lectura general */
+body {
+  line-height: 1.7;
+}
+
+/* Títulos principales */
+h1 {
+  color: #1f4e79;
+  font-weight: 800;
+}
+
+/* Títulos secundarios */
+h2 {
+  color: #2f6f9f;
+  border-bottom: 2px solid #e6eef5;
+  padding-bottom: 0.25em;
+  margin-top: 1.6em;
+}
+
+/* Títulos nivel 3 */
+h3 {
+  color: #3a7ca5;
+  margin-top: 1.3em;
+}
+
+/* Tablas más limpias */
+table {
+  font-size: 0.95em;
+}
+
+/* Bloques de código */
+pre {
+  border-radius: 10px;
+  padding: 1em;
+}
+
+/* Citas */
+blockquote {
+  border-left: 5px solid #1f77b4;
+  padding-left: 1em;
+  background-color: #f7fbff;
+  color: #222;
+}
+
+/* Mejora en móvil */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 17px;
+    line-height: 1.75;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  h2 {
+    font-size: 1.4em;
+  }
+
+  table {
+    font-size: 0.85em;
+  }
+}

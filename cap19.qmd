@@ -1,0 +1,151 @@
+---
+title: "CAPÍTULO 19 B2 Writing — Guía Completa"
+---
+
+
+
+*Todo lo que necesitas para brillar en el writing*
+
+---
+
+> ### 🎯 Idea Central
+> El writing del B2 evalúa:
+> **organización, variedad gramatical, vocabulario avanzado,
+> registro adecuado y cohesión.**
+> No es solo escribir sin errores — es escribir con **impacto.**
+
+---
+
+## 📧 FORMAL EMAIL / LETTER
+
+```
+ESTRUCTURA:
+┌─────────────────────────────────────────────┐
+│  Saludo formal                               │
+│  Párrafo 1: motivo de la carta/email         │
+│  Párrafo 2: desarrollo / detalles            │
+│  Párrafo 3: petición / solución              │
+│  Despedida formal                            │
+└─────────────────────────────────────────────┘
+
+SALUDOS:
+Dear Mr / Mrs / Ms [Apellido],   →  (si conoces el nombre)
+Dear Sir / Madam,                →  (si no conoces el nombre)
+
+PRIMERA FRASE:
+"I am writing with regard to..."
+"I am writing to enquire about..."
+"I am writing to complain about..."
+"I am writing in response to your advertisement..."
+"Further to our recent conversation, I am writing to..."
+
+FRASES ÚTILES EN EL CUERPO:
+"I would be grateful if you could..."
+"I would appreciate it if..."
+"Please do not hesitate to contact me..."
+"I look forward to hearing from you."
+"I would like to draw your attention to..."
+"I am afraid I must express my dissatisfaction with..."
+
+DESPEDIDAS:
+Yours sincerely,   →  (si usaste nombre: Dear Mr Smith)
+Yours faithfully,  →  (si usaste Dear Sir/Madam)
+```
+
+---
+
+## 📰 ESSAY — Opinion / Argumentative
+
+```
+ESTRUCTURA:
+┌─────────────────────────────────────────────┐
+│  Introducción: presenta el tema              │
+│               enuncia tu postura             │
+│  Párrafo 2: primer argumento + ejemplo       │
+│  Párrafo 3: segundo argumento + ejemplo      │
+│  Párrafo 4: argumento contrario + refutación │
+│  Conclusión: resume y reafirma postura       │
+└─────────────────────────────────────────────┘
+
+INTRODUCCIÓN:
+"It is widely believed that..."
+"In recent years, the issue of... has become increasingly relevant."
+"There is no doubt that... is one of the most controversial topics today."
+"The question of whether... has long been debated."
+
+DESARROLLAR ARGUMENTOS:
+"One of the main advantages of... is..."
+"A key argument in favour of... is..."
+"Furthermore, it should be noted that..."
+"Research has shown that..."
+"This is clearly demonstrated by..."
+
+ARGUMENTO CONTRARIO:
+"Critics argue that... However, this view fails to consider..."
+"While it is true that..., the fact remains that..."
+"Opponents claim that... Nevertheless..."
+
+CONCLUSIÓN:
+"Taking everything into consideration, I firmly believe that..."
+"All things considered, it seems clear that..."
+"On balance, the advantages clearly outweigh the disadvantages."
+```
+
+---
+
+## 📖 ARTICLE
+
+```
+ESTRUCTURA:
+┌─────────────────────────────────────────────┐
+│  Título llamativo (pregunta o gancho)        │
+│  Introducción que engancha al lector         │
+│  Párrafos de desarrollo                      │
+│  Conclusión con llamada a la acción          │
+└─────────────────────────────────────────────┘
+
+CARACTERÍSTICAS:
+- Tono puede ser semi-formal o informal
+- Dirígete al lector directamente:
+  "Have you ever wondered...?"
+  "You might be surprised to learn that..."
+  "Think about the last time you..."
+- Usa anécdotas y ejemplos concretos
+- Título con juego de palabras o pregunta
+```
+
+---
+
+## 📝 REPORT
+
+```
+ESTRUCTURA:
+┌─────────────────────────────────────────────┐
+│  TITLE: Report on [tema]                    │
+│  INTRODUCTION: objetivo del informe          │
+│  FINDINGS: resultados / hallazgos            │
+│  CONCLUSIONS: conclusiones                   │
+│  RECOMMENDATIONS: recomendaciones            │
+└─────────────────────────────────────────────┘
+
+FRASES TÍPICAS:
+"The aim of this report is to..."
+"The findings suggest that..."
+"It is recommended that..."
+"Based on the data collected, it can be concluded that..."
+"The evidence indicates that..."
+```
+
+---
+
+## 🔥 Los 5 Mandamientos del B2 Writing
+
+```
+1.  Varía tu vocabulario — nunca repitas la misma palabra dos veces
+2.  Usa al menos 3 tiempos verbales diferentes en tu texto
+3.  Incluye estructuras pasivas y modales
+4.  Conecta cada párrafo con un conector apropiado
+5.  Adapta el REGISTRO al tipo de texto (formal/informal)
+```
+
+

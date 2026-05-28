@@ -1,0 +1,160 @@
+---
+title: "CAPÍTULO 14 - Conditionals"
+---
+
+
+*El capítulo más temido — Desmitificado para siempre*
+
+---
+
+> ### 🎯 Idea Central
+> Los condicionales hablan de **condiciones y sus consecuencias.**
+> La clave está en entender qué tan **REAL o POSIBLE** es la situación.
+> Una vez entiendes eso, las fórmulas tienen sentido lógico.
+
+---
+
+## 📐 Los Cuatro Condicionales
+
+---
+
+### 🟢 ZERO CONDITIONAL — Las verdades universales
+
+```
+IF  +  Present Simple,  Present Simple
+
+"If you heat water to 100°C, it boils."
+"If I don't sleep, I feel terrible."
+"Plants die if they don't get water."
+
+Cuándo usarlo:
+✅  Hechos científicos y verdades universales
+✅  Instrucciones y procesos
+✅  Hábitos y rutinas (IF = WHEN, son intercambiables aquí)
+```
+
+---
+
+### 🔵 FIRST CONDITIONAL — Lo que puede pasar de verdad
+
+```
+IF  +  Present Simple,  WILL  +  Verbo Base
+
+"If it rains, I will take an umbrella."
+"If you study hard, you will pass."
+"I'll call you if I'm late."
+
+Cuándo usarlo:
+✅  Situación REAL y POSIBLE en el futuro
+✅  Hay una probabilidad genuina de que ocurra
+⚠️  NUNCA uses WILL después de IF: "If it will rain" ❌
+```
+
+---
+
+### 🟡 SECOND CONDITIONAL — La fantasía del presente/futuro
+
+```
+IF  +  Past Simple,  WOULD  +  Verbo Base
+
+"If I had a million dollars, I would travel the world."
+"If I were you, I would apologize."
+"What would you do if you won the lottery?"
+
+Cuándo usarlo:
+✅  Situación IRREAL o muy improbable AHORA o en el FUTURO
+✅  Estás imaginando una realidad alternativa
+✅  Dar consejos de forma indirecta
+```
+
+> 💡 **Truco especial — IF I WERE:**
+> ```
+> En inglés formal y B2:  "If I were you..."  ✅
+> En inglés informal:     "If I was you..."   ✅ (aceptable)
+> En B2 escrito:          usa WERE siempre    🔥
+> ```
+
+---
+
+### 🔴 THIRD CONDITIONAL — El arrepentimiento del pasado
+
+```
+IF  +  Past Perfect,  WOULD HAVE  +  Participio
+
+"If I had studied, I would have passed the exam."
+"If she had called, I would have answered."
+"We wouldn't have been late if we had left earlier."
+
+Cuándo usarlo:
+✅  Situación IRREAL en el PASADO — ya no se puede cambiar
+✅  Lamentos, arrepentimientos, críticas
+✅  Especular sobre situaciones pasadas alternativas
+```
+
+---
+
+## 💡 El Mapa Visual de los Condicionales
+
+```
+REAL ◄─────────────────────────────────► IRREAL
+
+   0              1              2              3
+SIEMPRE        POSIBLE       IMPROBABLE     IMPOSIBLE
+                              /irreal       (ya pasó)
+
+agua→vapor   llueve→       millonario→    estudié más→
+             paraguas       viajo          aprobé
+```
+
+---
+
+## 🔥 Mixed Conditionals — Solo B2
+
+> Mezclas el tiempo de la **condición** y el **resultado:**
+
+```
+PASADO IRREAL  →  consecuencia en el PRESENTE:
+IF + Past Perfect,  WOULD + Verbo Base
+
+"If I had studied medicine, I would be a doctor now."
+→ (No estudié medicina en el pasado → ahora no soy médico)
+
+PRESENTE IRREAL  →  consecuencia en el PASADO:
+IF + Past Simple,  WOULD HAVE + Participio
+
+"If I weren't so lazy, I would have finished it by now."
+→ (Soy vago [presente] → no lo terminé [pasado])
+```
+
+---
+
+## ⚠️ Errores Clásicos con Condicionales
+
+```
+❌  If I would have money, I would travel.
+✅  If I had money, I would travel.
+
+❌  If I would study, I will pass.
+✅  If I study, I will pass.
+
+❌  If she would have called...
+✅  If she had called...
+
+❌  I would have went if I had known.
+✅  I would have gone if I had known.
+```
+
+---
+
+## 📝 Mini Test Mental
+
+> Elige el condicional correcto:
+> 1. *"___ you heat ice, it melts."*
+> 2. *"___ I were rich, I would buy a yacht."*
+> 3. *"___ it rains tomorrow, we'll cancel."*
+> 4. *"___ she had studied, she would have passed."*
+>
+> *(Respuestas: 1-If/When · 2-If · 3-If · 4-If)*
+
+
+

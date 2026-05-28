@@ -1,0 +1,45 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "El libro de notas de inglés",
+    "section": "",
+    "text": "Preface\nThis is a Quarto book.\nPor un hispanohablante, para hispanohablantes",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "cap01.html",
+    "href": "cap01.html",
+    "title": "El Verbo To Be",
+    "section": "",
+    "text": "📐 La fórmula o estructura gramatical\nEl verbo To Be es la estructura más frecuente, versátil y sintácticamente única del inglés. A diferencia de la mayoría de los verbos ingleses, funciona como su propio operador: no requiere auxiliares externos (do / does) para negar o preguntar.\nLa morfología de To Be en presente se divide en tres formas estructurales fijas según el tipo de sujeto:\n\\[\\text{Sujeto} + \\text{Verbo TO BE} + \\text{Atributo}\\]",
+    "crumbs": [
+      "📘 Parte 1: Nivel A1",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>El Verbo To Be</span>"
+    ]
+  },
+  {
+    "objectID": "cap01.html#la-fórmula-o-estructura-gramatical",
+    "href": "cap01.html#la-fórmula-o-estructura-gramatical",
+    "title": "El Verbo To Be",
+    "section": "",
+    "text": "Tipo de Sujeto\nPronombres\nForma\nContracción Estándar\n\n\n\n\nPrimera persona (Singular)\nI\nam\nI’m\n\n\nTercera persona (Singular)\nHe, She, It\nis\nHe’s / She’s / It’s\n\n\nPlurales y Segunda persona\nYou, We, They\nare\nYou’re / We’re / They’re\n\n\n\n\nEl Mecanismo de Inversión Sintáctica\nPara estructurar preguntas, el inglés no depende de la entonación como el español; exige una alerta estructural. El verbo operador ejecuta un movimiento sintáctico saltando a la izquierda del sujeto:\n\nAfirmación:   [ You ]  [ are ]  ready.\n│         │\n└────┐┌───┘  (Inversión)\nvv\nPregunta:     [ Are ]  [ you ]  ready?\n\n\n\n\n\n\n\n\n💡 Truco mnemotécnico\n\n\n\nPara recordar la sintaxis interrogativa, imagina que el verbo To Be actúa como un “escudo delantero”. En una pregunta, el verbo siempre debe ir al frente de la oración para recibir el impacto del signo de interrogación al final. Si el sujeto va primero, el cerebro nativo asume automáticamente que es una declaración, no una pregunta.",
+    "crumbs": [
+      "📘 Parte 1: Nivel A1",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>El Verbo To Be</span>"
+    ]
+  },
+  {
+    "objectID": "cap01.html#ejemplos-correctos",
+    "href": "cap01.html#ejemplos-correctos",
+    "title": "El Verbo To Be",
+    "section": "✅ Ejemplos correctos",
+    "text": "✅ Ejemplos correctos\n\nIdentidad: I am a doctor. \\(\\rightarrow\\) Soy médico.\nUbicación: She is in London. \\(\\rightarrow\\) Ella está en Londres.\nEstado: We are ready. \\(\\rightarrow\\) Estamos listos.\nPregunta con inversión: Are they late? \\(\\rightarrow\\) ¿Llegan tarde?\n\n\n\n\n\n\n\n\n⚠️ Error típico del hispanohablante\n\n\n\nEl cerebro bilingüe tiende a transferir los vicios del idioma materno. Detecta y bloquea estos tres reflejos automáticos:\n\nEl Sujeto Fantasma: En español existe el sujeto elíptico (“Es importante”). En inglés, omitir el sujeto destruye la sintaxis. Si no hay un agente real, debes usar el pronombre neutro It.\n\n❌ Is important. \\(\\rightarrow\\) ✅ It is important.\n\nLa Posesión de la Edad: En inglés la edad no se posee (Tener), se es viejo a través del tiempo.\n\n❌ I have 30 years. \\(\\rightarrow\\) ✅ I am 30 years old.\n\nClima Impersonal:\n\n❌ Is raining. \\(\\rightarrow\\) ✅ It is raining.\n\n\n\n\n\n\n\n\n\n\n\n🔥 Tip directo para el examen\n\n\n\nSi te enfrentas a una prueba de redacción formal (Writing B2/C1 como Cambridge, IELTS o TOEFL), las contracciones están estrictamente prohibidas. El uso de don’t, isn’t o they’re resta autoridad académica a tu texto. * ❌ The results aren’t conclusive. (Registro informal/hablado). * ✅ The results are not conclusive. (Registro académico/formal).\n\n\n\n\n\n\n\n\n\n🧠 Momento de reflexión profunda\n\n\n\n¿Por qué el inglés es tan rígido con la presencia del sujeto (It) mientras que el español lo descarta fácilmente? La respuesta está en la morfología del verbo.\nEn español, la terminación del verbo te dice quién habla (“Estamos” solo puede ser Nosotros). En inglés, formas como are se repiten para You, We y They. Sin el pronombre explícito delante, el cerebro nativo es incapaz de descodificar quién ejecuta la acción. El pronombre en inglés no es un adorno; es un requisito de claridad matemática.\n\n\n\n\n\n\n\n\n\n📝 Mini ejercicio mental\n\n\n\nFuerza a tu mente a generar la solución y justificar su estructura antes de desplegar la respuesta.\n\nCorrige la siguiente oración para un ensayo formal de nivel C1: “The data isn’t reliable.”\n¿Qué componente obligatorio le falta a la frase: “Is very hot today”?\nAplica el mecanismo de inversión a: “She is coming.”\n\n\n\n👁️ Verificar análisis y respuestas\n\n\nSe debe eliminar la contracción para cumplir con el estándar académico: “The data is not reliable.”\nLe falta el sujeto neutro impersonal. Lo correcto es: “It is very hot today.”\n“Is she coming?” (El verbo pasa al frente como escudo interrogativo).",
+    "crumbs": [
+      "📘 Parte 1: Nivel A1",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>El Verbo To Be</span>"
+    ]
+  }
+]

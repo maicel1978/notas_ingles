@@ -1,0 +1,103 @@
+---
+title: "CAPÍTULO 7 Future Forms"
+---
+
+*Tres formas de hablar del futuro — y cuándo usar cada una*
+
+---
+
+> ### 🎯 Idea Central
+> El inglés tiene **múltiples futuros** y cada uno dice algo diferente
+> sobre tu **relación** con ese evento futuro.
+> No son intercambiables. Cada uno tiene su momento.
+
+---
+
+## 📐 Las Tres Formas Principales
+
+---
+
+### 🔮 WILL — El futuro espontáneo
+
+```
+Sujeto  +  WILL  +  VERBO BASE
+Negativo:  won't (will not)
+```
+
+**Cuándo usarlo:**
+```
+✅  Decisiones espontáneas (decides en el momento):
+    "I'll have the pizza."  (decides en el restaurante, ahora mismo)
+
+✅  Predicciones sin evidencia concreta (opinión):
+    "I think it will rain tomorrow."
+
+✅  Promesas y ofrecimientos:
+    "I'll help you."  /  "I'll call you later."
+
+✅  Verdades y hechos futuros:
+    "She'll be 30 next year."
+```
+
+---
+
+### 📅 GOING TO — El futuro planificado
+
+```
+Sujeto  +  AM/IS/ARE  +  GOING TO  +  VERBO BASE
+```
+
+**Cuándo usarlo:**
+```
+✅  Planes ya decididos antes de hablar:
+    "I'm going to study medicine."  (ya lo tenías decidido)
+
+✅  Predicciones con EVIDENCIA VISIBLE:
+    "Look at those clouds! It's going to rain."
+    🧠 Si PUEDES VER la evidencia → going to
+```
+
+---
+
+### 🗓️ PRESENT CONTINUOUS — El futuro en agenda
+
+```
+Sujeto  +  AM/IS/ARE  +  VERBO-ING
+```
+
+**Cuándo usarlo:**
+```
+✅  Planes con hora y lugar ya fijados:
+    "I'm meeting John at 6."       (está en el calendario)
+    "They're getting married in June."  (todo organizado)
+    "We're flying to Rome on Friday."
+```
+
+---
+
+## 💡 Tabla Comparativa — El Truco Visual
+
+| Situación | Forma correcta |
+|-----------|---------------|
+| El teléfono suena. Decides: *"¡Yo lo cojo!"* | **WILL** |
+| Ya decidiste: *"Este verano viajo a Londres"* | **GOING TO** |
+| Tienes cita: *"Ceno con María el viernes a las 8"* | **PRESENT CONTINUOUS** |
+| Ves nubes negras en el cielo | **GOING TO** |
+| Te piden que predices el futuro sin datos | **WILL** |
+
+---
+
+## ⚠️ Errores Típicos
+
+```
+❌  If it will rain, I'll stay home.
+✅  If it rains, I'll stay home.
+    (después de IF nunca uses WILL — ver Capítulo 14)
+
+❌  I going to travel next year.
+✅  I'm going to travel next year.
+
+❌  I will meet her at 8 tonight. (tienes cita confirmada)
+✅  I'm meeting her at 8 tonight.
+```
+

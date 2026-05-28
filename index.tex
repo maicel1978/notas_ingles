@@ -1,0 +1,3201 @@
+% Options for packages loaded elsewhere
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  spanish,
+  letterpaper,
+]{scrbook}
+\usepackage{xcolor}
+\usepackage[top=25mm,bottom=25mm,left=25mm,right=25mm]{geometry}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{2}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+% Make \paragraph and \subparagraph free-standing
+\makeatletter
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}{
+    \@ifstar
+      \xxxParagraphStar
+      \xxxParagraphNoStar
+  }
+  \newcommand{\xxxParagraphStar}[1]{\oldparagraph*{#1}\mbox{}}
+  \newcommand{\xxxParagraphNoStar}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}{
+    \@ifstar
+      \xxxSubParagraphStar
+      \xxxSubParagraphNoStar
+  }
+  \newcommand{\xxxSubParagraphStar}[1]{\oldsubparagraph*{#1}\mbox{}}
+  \newcommand{\xxxSubParagraphNoStar}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+\makeatother
+
+
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+
+
+
+\ifLuaTeX
+\usepackage[bidi=basic]{babel}
+\else
+\usepackage[bidi=default]{babel}
+\fi
+% get rid of language-specific shorthands (see #6817):
+\let\LanguageShortHands\languageshorthands
+\def\languageshorthands#1{}
+
+
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+
+
+ 
+
+
+\usepackage{emoji}
+\makeatletter
+\@ifpackageloaded{tcolorbox}{}{\usepackage[skins,breakable]{tcolorbox}}
+\@ifpackageloaded{fontawesome5}{}{\usepackage{fontawesome5}}
+\definecolor{quarto-callout-color}{HTML}{909090}
+\definecolor{quarto-callout-note-color}{HTML}{0758E5}
+\definecolor{quarto-callout-important-color}{HTML}{CC1914}
+\definecolor{quarto-callout-warning-color}{HTML}{EB9113}
+\definecolor{quarto-callout-tip-color}{HTML}{00A047}
+\definecolor{quarto-callout-caution-color}{HTML}{FC5300}
+\definecolor{quarto-callout-color-frame}{HTML}{acacac}
+\definecolor{quarto-callout-note-color-frame}{HTML}{4582ec}
+\definecolor{quarto-callout-important-color-frame}{HTML}{d9534f}
+\definecolor{quarto-callout-warning-color-frame}{HTML}{f0ad4e}
+\definecolor{quarto-callout-tip-color-frame}{HTML}{02b875}
+\definecolor{quarto-callout-caution-color-frame}{HTML}{fd7e14}
+\makeatother
+\makeatletter
+\@ifpackageloaded{bookmark}{}{\usepackage{bookmark}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Tabla de contenidos}
+\else
+  \newcommand\contentsname{Tabla de contenidos}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{Listado de Figuras}
+\else
+  \newcommand\listfigurename{Listado de Figuras}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{Listado de Tablas}
+\else
+  \newcommand\listtablename{Listado de Tablas}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figura}
+\else
+  \newcommand\figurename{Figura}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Tabla}
+\else
+  \newcommand\tablename{Tabla}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listado}
+\newcommand*\listoflistings{\listof{codelisting}{Listado de Listados}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={El libro de notas de inglés},
+  pdfauthor={Maicel Maicel},
+  pdflang={es},
+  colorlinks=true,
+  linkcolor={Maroon},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+
+
+\title{El libro de notas de inglés}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{De A1 a C1 --- El libro que ojalá hubiera existido antes}
+\author{Maicel Maicel}
+\date{2026-05-28}
+\begin{document}
+\frontmatter
+\maketitle
+
+\renewcommand*\contentsname{Tabla de contenidos}
+{
+\hypersetup{linkcolor=}
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+
+\mainmatter
+\bookmarksetup{startatroot}
+
+\chapter*{Preface}\label{preface}
+\addcontentsline{toc}{chapter}{Preface}
+
+\markboth{Preface}{Preface}
+
+This is a Quarto book.
+
+\emph{Por un hispanohablante, para hispanohablantes}
+
+\bookmarksetup{startatroot}
+
+\chapter{Antes de empezar}\label{antes-de-empezar}
+
+\begin{quote}
+\subsection{💬 Antes de empezar}\label{antes-de-empezar-1}
+
+Este libro no es un libro de texto frío y aburrido. Es tu mejor amigo
+que ya aprendió inglés y te está contando \textbf{todos los secretos.}
+
+Léelo como si fuera una conversación, no como un manual de
+instrucciones. Cada página tiene un propósito: \textbf{que aprendas el
+doble en la mitad del tiempo.}
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{quote}
+\subsection{🗺️ Cómo usar este libro}\label{cuxf3mo-usar-este-libro}
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule\noalign{}
+Símbolo & Significa \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+🎯 & La idea central --- léela primero siempre \\
+📐 & La fórmula o estructura gramatical \\
+💡 & Truco mnemotécnico --- esto lo recordarás siempre \\
+✅ & Ejemplos correctos \\
+⚠️ & Error típico del hispanohablante \\
+🔥 & Tip directo para el examen \\
+🧠 & Momento de reflexión profunda \\
+📝 & Mini ejercicio mental \\
+\end{longtable}
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{quote}
+\subsection{⚡ Progreso del libro}\label{progreso-del-libro}
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule\noalign{}
+Nivel & Capítulos & Estado \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+📘 A1 & 1 --- 4 & Bases absolutas \\
+📗 A2 & 5 --- 7 & Supervivencia \\
+📙 B1 & 8 --- 13 & Fluidez inicial \\
+📕 B2 & 14 --- 22 & Dominio real \\
+\end{longtable}
+\end{quote}
+
+\part{📘 Parte 1: Nivel A1}
+
+\chapter{El Verbo To Be}\label{el-verbo-to-be}
+
+La arquitectura fundamental del inglés
+
+\hfill\break
+
+El verbo \emph{To Be} es la estructura más frecuente, versátil y
+sintácticamente única del inglés. A diferencia de la mayoría de los
+verbos ingleses, funciona como su propio operador: no requiere
+auxiliares externos (\emph{do} / \emph{does}) para negar o preguntar.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-note-color-frame, toprule=.15mm, title={🎯 La idea central}, bottomrule=.15mm, breakable, coltitle=black, bottomtitle=1mm, arc=.35mm, titlerule=0mm, leftrule=.75mm, toptitle=1mm, rightrule=.15mm, opacityback=0, colbacktitle=quarto-callout-note-color!10!white, left=2mm, opacitybacktitle=0.6, colback=white]
+
+\emph{To Be} funciona exactamente como un \textbf{signo de igualdad
+(\(=\))} o puente copulativo. Su único objetivo es conectar un
+\textbf{Sujeto} con un \textbf{Atributo} (una identidad, un estado, una
+ubicación o una propiedad).
+
+Mientras el español fragmenta este concepto en dos verbos distintos
+(\emph{Ser} y \emph{Estar}), la mente angloparlante procesa ambos
+escenarios bajo una única categoría de existencia.
+
+\end{tcolorbox}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{📐 La fórmula o estructura
+gramatical}\label{la-fuxf3rmula-o-estructura-gramatical}
+
+La morfología de \emph{To Be} en presente se divide en tres formas
+estructurales fijas según el tipo de sujeto:
+
+\[\text{Sujeto} + \text{Verbo TO BE} + \text{Atributo}\]
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2222}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2222}}
+  >{\centering\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2778}}
+  >{\centering\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2778}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Tipo de Sujeto
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Pronombres
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Forma
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Contracción Estándar
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{Primera persona (Singular)} & I & \textbf{am} & I'm \\
+\textbf{Tercera persona (Singular)} & He, She, It & \textbf{is} & He's /
+She's / It's \\
+\textbf{Plurales y Segunda persona} & You, We, They & \textbf{are} &
+You're / We're / They're \\
+\end{longtable}
+
+\subsection{El Mecanismo de Inversión
+Sintáctica}\label{el-mecanismo-de-inversiuxf3n-sintuxe1ctica}
+
+Para estructurar preguntas, el inglés no depende de la entonación como
+el español; exige una \textbf{alerta estructural}. El verbo operador
+ejecuta un movimiento sintáctico saltando a la izquierda del sujeto:
+
+\begin{verbatim}
+
+Afirmación:   [ You ]  [ are ]  ready.
+│         │
+└────┐┌───┘  (Inversión)
+vv
+Pregunta:     [ Are ]  [ you ]  ready?
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-tip-color-frame, toprule=.15mm, title={💡 Truco mnemotécnico}, bottomrule=.15mm, breakable, coltitle=black, bottomtitle=1mm, arc=.35mm, titlerule=0mm, leftrule=.75mm, toptitle=1mm, rightrule=.15mm, opacityback=0, colbacktitle=quarto-callout-tip-color!10!white, left=2mm, opacitybacktitle=0.6, colback=white]
+
+Para recordar la sintaxis interrogativa, imagina que el verbo \emph{To
+Be} actúa como un \textbf{``escudo delantero''}. En una pregunta, el
+verbo siempre debe ir al frente de la oración para recibir el impacto
+del signo de interrogación al final. Si el sujeto va primero, el cerebro
+nativo asume automáticamente que es una declaración, no una pregunta.
+
+\end{tcolorbox}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{✅ Ejemplos correctos}\label{ejemplos-correctos}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Identidad:} I \textbf{am} a doctor. \(\rightarrow\) \emph{Soy
+  médico.}
+\item
+  \textbf{Ubicación:} She \textbf{is} in London. \(\rightarrow\)
+  \emph{Ella está en Londres.}
+\item
+  \textbf{Estado:} We \textbf{are} ready. \(\rightarrow\) \emph{Estamos
+  listos.}
+\item
+  \textbf{Pregunta con inversión:} \textbf{Are} they late?
+  \(\rightarrow\) \emph{¿Llegan tarde?}
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-warning-color-frame, toprule=.15mm, title={⚠️ Error típico del hispanohablante}, bottomrule=.15mm, breakable, coltitle=black, bottomtitle=1mm, arc=.35mm, titlerule=0mm, leftrule=.75mm, toptitle=1mm, rightrule=.15mm, opacityback=0, colbacktitle=quarto-callout-warning-color!10!white, left=2mm, opacitybacktitle=0.6, colback=white]
+
+El cerebro bilingüe tiende a transferir los vicios del idioma materno.
+Detecta y bloquea estos tres reflejos automáticos:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{El Sujeto Fantasma:} En español existe el sujeto elíptico
+  (\emph{``Es importante''}). En inglés, omitir el sujeto destruye la
+  sintaxis. Si no hay un agente real, debes usar el pronombre neutro
+  \textbf{It}.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    ❌ \emph{Is important.} \(\rightarrow\) ✅ \textbf{It is} important.
+  \end{itemize}
+\item
+  \textbf{La Posesión de la Edad:} En inglés la edad no se posee
+  (\emph{Tener}), se \emph{es} viejo a través del tiempo.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    ❌ \emph{I have 30 years.} \(\rightarrow\) ✅ \textbf{I am} 30 years
+    old.
+  \end{itemize}
+\item
+  \textbf{Clima Impersonal:}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    ❌ \emph{Is raining.} \(\rightarrow\) ✅ \textbf{It is} raining.
+  \end{itemize}
+\end{enumerate}
+
+\end{tcolorbox}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-important-color-frame, toprule=.15mm, title={🔥 Tip directo para el examen}, bottomrule=.15mm, breakable, coltitle=black, bottomtitle=1mm, arc=.35mm, titlerule=0mm, leftrule=.75mm, toptitle=1mm, rightrule=.15mm, opacityback=0, colbacktitle=quarto-callout-important-color!10!white, left=2mm, opacitybacktitle=0.6, colback=white]
+
+Si te enfrentas a una prueba de redacción formal (\textbf{Writing B2/C1}
+como Cambridge, IELTS o TOEFL), \textbf{las contracciones están
+estrictamente prohibidas}. El uso de \emph{don't}, \emph{isn't} o
+\emph{they're} resta autoridad académica a tu texto. * ❌ \emph{The
+results \textbf{aren't} conclusive.} (Registro informal/hablado). * ✅
+\emph{The results \textbf{are not} conclusive.} (Registro
+académico/formal).
+
+\end{tcolorbox}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-caution-color-frame, toprule=.15mm, title={🧠 Momento de reflexión profunda}, bottomrule=.15mm, breakable, coltitle=black, bottomtitle=1mm, arc=.35mm, titlerule=0mm, leftrule=.75mm, toptitle=1mm, rightrule=.15mm, opacityback=0, colbacktitle=quarto-callout-caution-color!10!white, left=2mm, opacitybacktitle=0.6, colback=white]
+
+¿Por qué el inglés es tan rígido con la presencia del sujeto
+(\texttt{It}) mientras que el español lo descarta fácilmente? La
+respuesta está en la morfología del verbo.
+
+En español, la terminación del verbo te dice quién habla
+(\emph{``Estamo\textbf{s}''} solo puede ser \emph{Nosotros}). En inglés,
+formas como \texttt{are} se repiten para \emph{You}, \emph{We} y
+\emph{They}. Sin el pronombre explícito delante, el cerebro nativo es
+incapaz de descodificar quién ejecuta la acción. El pronombre en inglés
+no es un adorno; es un requisito de claridad matemática.
+
+\end{tcolorbox}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{tcolorbox}[enhanced jigsaw, colframe=quarto-callout-note-color-frame, toprule=.15mm, title={📝 Mini ejercicio mental}, bottomrule=.15mm, breakable, coltitle=black, bottomtitle=1mm, arc=.35mm, titlerule=0mm, leftrule=.75mm, toptitle=1mm, rightrule=.15mm, opacityback=0, colbacktitle=quarto-callout-note-color!10!white, left=2mm, opacitybacktitle=0.6, colback=white]
+
+\emph{Fuerza a tu mente a generar la solución y justificar su estructura
+antes de desplegar la respuesta.}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Corrige la siguiente oración para un ensayo formal de nivel C1:
+  \emph{``The data isn't reliable.''}
+\item
+  ¿Qué componente obligatorio le falta a la frase: \emph{``Is very hot
+  today''}?
+\item
+  Aplica el mecanismo de inversión a: \emph{``She is coming.''}
+\end{enumerate}
+
+👁️ Verificar análisis y respuestas
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Se debe eliminar la contracción para cumplir con el estándar
+  académico: \textbf{``The data is not reliable.''}
+\item
+  Le falta el sujeto neutro impersonal. Lo correcto es: \textbf{``It is
+  very hot today.''}
+\item
+  \textbf{``Is she coming?''} (El verbo pasa al frente como escudo
+  interrogativo).
+\end{enumerate}
+
+\end{tcolorbox}
+
+\chapter{CAPÍTULO 2 Los Pronombres}\label{capuxedtulo-2-los-pronombres}
+
+\emph{Las personas del drama inglés}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{quote}
+\subsection{🎯 Idea Central}\label{idea-central}
+
+En inglés \textbf{SIEMPRE} necesitas el pronombre. No puedes esconderte
+como en español. \emph{``Estoy cansado''} → ❌ en inglés → ✅ \textbf{I
+am tired}
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{📐 La Tabla Maestra de
+Pronombres}\label{la-tabla-maestra-de-pronombres}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1343}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1194}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1194}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.2239}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.2388}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1642}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Español
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Sujeto
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Objeto
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Posesivo Adj.
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Posesivo Pron.
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Reflexivo
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+yo & \textbf{I} & me & my & mine & myself \\
+tú & \textbf{you} & you & your & yours & yourself \\
+él & \textbf{he} & him & his & his & himself \\
+ella & \textbf{she} & her & her & hers & herself \\
+ello & \textbf{it} & it & its & its & itself \\
+nosotros & \textbf{we} & us & our & ours & ourselves \\
+vosotros/uds & \textbf{you} & you & your & yours & yourselves \\
+ellos & \textbf{they} & them & their & theirs & themselves \\
+\end{longtable}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{💡 Truco --- Adjetivo vs Pronombre
+Posesivo}\label{truco-adjetivo-vs-pronombre-posesivo}
+
+\begin{verbatim}
+ADJETIVO POSESIVO  →  acompaña a un nombre
+"my car"  /  "her house"  /  "their dog"
+   ↑               ↑              ↑
+ siempre hay un nombre después
+
+PRONOMBRE POSESIVO  →  va solo, sustituye al nombre
+"The car is mine."  /  "The house is hers."
+                ↑                      ↑
+             va solo, sin nombre después
+\end{verbatim}
+
+\begin{quote}
+🧠 \textbf{Regla rápida:} ¿Puedes poner un \textbf{NOMBRE} después? →
+Adjetivo posesivo ¿Va \textbf{SOLO}? → Pronombre posesivo
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{✅ Ejemplos Comparados}\label{ejemplos-comparados}
+
+\begin{verbatim}
+my book     ←→   The book is mine.
+your keys   ←→   The keys are yours.
+his car     ←→   The car is his.
+her idea    ←→   The idea is hers.
+our house   ←→   The house is ours.
+their dog   ←→   The dog is theirs.
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{⚠️ Errores Típicos}\label{errores-tuxedpicos}
+
+\begin{verbatim}
+❌  Is my book.            →  ✅  It is my book.
+❌  The book is my.        →  ✅  The book is mine.
+❌  I hurt me.             →  ✅  I hurt myself.
+❌  She looked herself in the mirror.  →  ✅  (esto sí es correcto)
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{🔥 Tip para el Examen}\label{tip-para-el-examen}
+
+\begin{quote}
+\textbf{IT} hace mucho trabajo en inglés. Lo usamos para: tiempo,
+distancia, temperatura y situaciones:
+
+\begin{verbatim}
+It is raining.          →  Está lloviendo.
+It is far.              →  Está lejos.
+It is cold.             →  Hace frío.
+It is Monday.           →  Es lunes.
+\end{verbatim}
+\end{quote}
+
+\chapter{CAPÍTULO 3 Present Simple}\label{capuxedtulo-3-present-simple}
+
+\emph{El tiempo que describe tu vida}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{quote}
+\subsection{🎯 Idea Central}\label{idea-central-1}
+
+Habla de \textbf{rutinas, verdades universales y hábitos.} No está
+pasando AHORA --- pasa \textbf{SIEMPRE} o \textbf{REGULARMENTE.}
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{📐 La Fórmula Completa}\label{la-fuxf3rmula-completa}
+
+\begin{verbatim}
+POSITIVO:
+I / You / We / They  +  VERBO BASE          →  I work
+He / She / It        +  VERBO + S/ES/IES    →  He works
+
+NEGATIVO:
+I / You / We / They  +  DON'T  +  VERBO    →  I don't work
+He / She / It        +  DOESN'T + VERBO    →  She doesn't work
+
+PREGUNTA:
+DO   +  I/You/We/They  +  VERBO?           →  Do you work?
+DOES +  He/She/It      +  VERBO?           →  Does she work?
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{💡 Truco --- La ``S Viajera''}\label{truco-la-s-viajera}
+
+\begin{verbatim}
+She  workS.              ✅  (la S está en el verbo)
+Does she  work?          ✅  (la S viajó a DOES)
+Does she  workS?         ❌  (no puedes tener dos S)
+\end{verbatim}
+
+\begin{quote}
+🧠 \textbf{Cuando usas DOES, la S ``salta'' al auxiliar.} El verbo
+principal \textbf{vuelve a su forma base.}
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{💡 Truco --- ¿Cuándo añadir -S, -ES o
+-IES?}\label{truco-cuuxe1ndo-auxf1adir--s--es-o--ies}
+
+\begin{verbatim}
+Verbos normales              →  +S    →  work→works, play→plays
+Terminan en s,sh,ch,x,o     →  +ES   →  watch→watches, wash→washes
+Consonante + Y al final      →  -Y+IES → study→studies, carry→carries
+Vocal + Y al final           →  +S    →  play→plays, enjoy→enjoys
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{✅ Señales de Tiempo --- Time
+Markers}\label{seuxf1ales-de-tiempo-time-markers}
+
+\begin{verbatim}
+always      →  siempre
+usually     →  usualmente
+often       →  frecuentemente
+sometimes   →  a veces
+rarely      →  raramente
+never       →  nunca
+every day   →  cada día
+on Mondays  →  los lunes
+in the morning → por la mañana
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{⚠️ Errores Típicos}\label{errores-tuxedpicos-1}
+
+\begin{verbatim}
+❌  She don't like coffee.      →  ✅  She doesn't like coffee.
+❌  Does he works here?         →  ✅  Does he work here?
+❌  He don't never eat meat.    →  ✅  He never eats meat.
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{🔥 Tip para el Examen B2}\label{tip-para-el-examen-b2}
+
+\begin{quote}
+Úsalo para \textbf{generalizaciones} en essays académicos:
+
+\begin{verbatim}
+"Research shows that people who exercise regularly live longer."
+"Studies suggest that technology affects concentration."
+\end{verbatim}
+
+Suena profesional y es fácil de construir.
+\end{quote}
+
+\chapter{CAPÍTULO 4 - Present
+Continuous}\label{capuxedtulo-4---present-continuous}
+
+\emph{La foto vs.~el documental}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{quote}
+\subsection{🎯 Idea Central}\label{idea-central-2}
+
+\textbf{Present Simple} = el documental de tu vida \emph{(lo que siempre
+haces)} \textbf{Present Continuous} = la foto de este momento \emph{(lo
+que haces AHORA)}
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{📐 La Fórmula}\label{la-fuxf3rmula}
+
+\begin{verbatim}
+POSITIVO:  Sujeto  +  AM/IS/ARE  +  VERBO-ING
+NEGATIVO:  Sujeto  +  AM/IS/ARE  +  NOT  +  VERBO-ING
+PREGUNTA:  AM/IS/ARE  +  Sujeto  +  VERBO-ING?
+
+Ejemplos:
+(+)  I am working.
+(-)  She is not (isn't) working.
+(?)  Are they working?
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{💡 Truco --- Las Reglas del
+-ING}\label{truco-las-reglas-del--ing}
+
+\begin{verbatim}
+Verbo normal                          →  +ING       →  work  →  working
+Termina en E muda                     →  quita E+ING →  make  →  making
+Termina en consonante+vocal+consonante→  dobla+ING   →  run   →  running
+Termina en IE                         →  IE→Y+ING    →  lie   →  lying
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{✅ Señales de Tiempo}\label{seuxf1ales-de-tiempo}
+
+\begin{verbatim}
+now           →  ahora
+right now     →  ahora mismo
+at the moment →  en este momento
+Look!         →  ¡Mira! (implica algo que pasa ahora)
+Listen!       →  ¡Escucha!
+today         →  hoy (cuando implica este período)
+this week     →  esta semana
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{⚠️ Los Stative Verbs --- Verbos que ODIAN el
+-ING}\label{los-stative-verbs-verbos-que-odian-el--ing}
+
+\begin{quote}
+Estos verbos describen \textbf{estados mentales o emocionales}, no
+acciones físicas. \textbf{NUNCA} van en continuous.
+\end{quote}
+
+\begin{verbatim}
+SENTIMIENTOS:   love, hate, like, prefer, want, need, wish, adore
+MENTE:          know, believe, think*, understand, remember, forget, mean
+SENTIDOS:       see*, hear, smell*, taste*, feel*
+POSESIÓN:       have*, own, belong, contain, include
+OTROS:          seem, appear, look*, cost, weigh
+\end{verbatim}
+
+\begin{quote}
+⚠️ Los marcados con * pueden usarse en continuous \textbf{con
+significado diferente:}
+
+\begin{verbatim}
+I think you're right.     →  Creo que tienes razón. (opinión)
+I'm thinking about you.   →  Estoy pensando en ti. (proceso activo)
+
+I have a car.             →  Tengo un coche. (posesión)
+I'm having lunch.         →  Estoy almorzando. (acción)
+\end{verbatim}
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{💡 Tabla Comparativa --- Simple vs
+Continuous}\label{tabla-comparativa-simple-vs-continuous}
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule\noalign{}
+Present Simple & Present Continuous \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+I work in a bank. & I'm working from home today. \\
+She drinks coffee every morning. & She's drinking tea right now. \\
+He lives in Madrid. & He's living with his parents temporarily. \\
+It rains a lot in London. & It's raining outside! \\
+\end{longtable}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{🔥 Tip para el Examen}\label{tip-para-el-examen-1}
+
+\begin{quote}
+El Present Continuous también expresa \textbf{planes futuros} ya
+confirmados:
+
+\begin{verbatim}
+"I'm meeting the director tomorrow at 10."
+"They're launching the product next month."
+\end{verbatim}
+
+Esto es \textbf{clave para el writing de B2.}
+\end{quote}
+
+\part{📗 Parte 2: Nivel A2}
+
+\chapter{CAPÍTULO 5 Past Simple}\label{capuxedtulo-5-past-simple}
+
+\emph{El tiempo del storytelling}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{quote}
+\subsection{🎯 Idea Central}\label{idea-central-3}
+
+Acción \textbf{completada} en el pasado con \textbf{tiempo definido.} La
+película ya terminó. No hay conexión con el presente.
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{📐 La Fórmula}\label{la-fuxf3rmula-1}
+
+\begin{verbatim}
+POSITIVO:  Sujeto  +  VERBO PASADO (regular: +ED / irregular: forma 2)
+NEGATIVO:  Sujeto  +  DIDN'T  +  VERBO BASE
+PREGUNTA:  DID  +  Sujeto  +  VERBO BASE?
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{💡 Truco --- DID Roba el
+Pasado}\label{truco-did-roba-el-pasado}
+
+\begin{verbatim}
+She worked.              →  pasado en el verbo
+Did she work?            →  DID tiene el pasado, verbo vuelve a base
+Did she worked?          ❌  doble pasado = error grave
+She didn't work.         ✅  DIDN'T tiene el pasado
+She didn't worked.       ❌
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{💡 Los 3 Sonidos del -ED}\label{los-3-sonidos-del--ed}
+
+\begin{verbatim}
+/t/   →  después de sonidos sordos (p,k,f,s,sh,ch):
+         worked /wɜːkt/,  stopped /stɒpt/,  watched /wɒtʃt/
+
+/d/   →  después de sonidos sonoros (b,g,v,z,m,n,l,r):
+         lived /lɪvd/,  called /kɔːld/,  loved /lʌvd/
+
+/ɪd/  →  después de T y D (necesitas una vocal para separar):
+         wanted /ˈwɒntɪd/,  needed /ˈniːdɪd/,  decided /dɪˈsaɪdɪd/
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{📐 Los Verbos Irregulares --- Por
+Familias}\label{los-verbos-irregulares-por-familias}
+
+\begin{quote}
+💡 \textbf{No los memorices uno por uno. Agrúpalos por patrones.}
+\end{quote}
+
+\textbf{Familia 1 --- Los que no cambian:}
+
+\begin{verbatim}
+cut → cut    put → put    hit → hit    let → let    set → set
+🧠  "Se quedaron como estaban, como tú cuando te dicen que hay tarea"
+\end{verbatim}
+
+\textbf{Familia 2 --- Cambian la vocal del medio:}
+
+\begin{verbatim}
+run → ran       come → came      become → became
+sit → sat       win → won        swim → swam
+drink → drank   sing → sang      ring → rang       begin → began
+drive → drove   ride → rode      write → wrote     rise → rose
+\end{verbatim}
+
+\textbf{Familia 3 --- La familia -ought / -aught:}
+
+\begin{verbatim}
+buy   → bought      think → thought     bring → brought
+catch → caught      teach → taught      fight → fought
+🧠  "Los que compramos, pensamos y traemos = familia BOUGHT"
+\end{verbatim}
+
+\textbf{Familia 4 --- Terminan en -eld, -ept, -elt:}
+
+\begin{verbatim}
+hold → held    keep → kept    feel → felt
+sell → sold    tell → told    build → built
+\end{verbatim}
+
+\textbf{Los 20 Imprescindibles --- Memoriza estos sí o sí:}
+
+\begin{verbatim}
+be   → was/were    have → had       do   → did
+go   → went        say  → said      get  → got
+make → made        know → knew      take → took
+see  → saw         come → came      give → gave
+find → found       tell → told      feel → felt
+leave → left       keep → kept      meet → met
+lose → lost        choose → chose
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{✅ Señales de Tiempo}\label{seuxf1ales-de-tiempo-1}
+
+\begin{verbatim}
+yesterday           →  ayer
+last week/month     →  la semana/el mes pasado
+...ago              →  hace...  ("two years ago" = hace dos años)
+in 1990             →  en 1990
+when I was a child  →  cuando era niño
+that day            →  ese día
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{⚠️ Errores Típicos}\label{errores-tuxedpicos-2}
+
+\begin{verbatim}
+❌  I did go to the cinema yesterday.     →  ✅  I went to the cinema yesterday.
+❌  She didn't went home.                →  ✅  She didn't go home.
+❌  Did he came early?                   →  ✅  Did he come early?
+\end{verbatim}
+
+\chapter{CAPÍTULO 6. Past
+Continuous}\label{capuxedtulo-6.-past-continuous}
+
+\emph{El escenario de la historia}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{quote}
+\subsection{🎯 Idea Central}\label{idea-central-4}
+
+\textbf{Past Simple} = el rayo que cayó \emph{(acción puntual)}
+\textbf{Past Continuous} = la tormenta de fondo \emph{(situación en
+progreso)} Juntos cuentan la historia completa.
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{📐 La Fórmula}\label{la-fuxf3rmula-2}
+
+\begin{verbatim}
+Sujeto  +  WAS/WERE  +  VERBO-ING
+
+I / He / She / It   →  WAS
+You / We / They     →  WERE
+
+(+)  I was sleeping.
+(-)  She wasn't listening.
+(?)  Were they working?
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{💡 La Combinación Más Usada --- WHEN y
+WHILE}\label{la-combinaciuxf3n-muxe1s-usada-when-y-while}
+
+\begin{verbatim}
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    [was sleeping — acción de fondo]
+                    💥 rang
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+WHEN  +  Past Simple   (la interrupción):
+"I was sleeping WHEN the phone rang."
+
+WHILE  +  Past Continuous  (la actividad de fondo):
+"WHILE I was cooking, my sister arrived."
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{✅ Usos del Past Continuous}\label{usos-del-past-continuous}
+
+\begin{verbatim}
+1. Acción en progreso en un momento del pasado:
+   "At 8pm, I was having dinner."
+
+2. Dos acciones simultáneas en el pasado:
+   "She was reading while he was cooking."
+
+3. Descripción de fondo en una historia:
+   "The sun was shining. Birds were singing. Suddenly..."
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{🔥 Tip para el Examen}\label{tip-para-el-examen-2}
+
+\begin{quote}
+En \textbf{narrativa y storytelling} (writing B1-B2), alterna Past
+Simple y Past Continuous:
+
+\begin{verbatim}
+"It was a dark night. The wind was blowing and the rain
+was hitting the windows when suddenly the lights went out."
+\end{verbatim}
+
+Esto demuestra dominio del tiempo narrativo.
+\end{quote}
+
+\chapter{CAPÍTULO 7 Future Forms}\label{capuxedtulo-7-future-forms}
+
+\emph{Tres formas de hablar del futuro --- y cuándo usar cada una}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{quote}
+\subsection{🎯 Idea Central}\label{idea-central-5}
+
+El inglés tiene \textbf{múltiples futuros} y cada uno dice algo
+diferente sobre tu \textbf{relación} con ese evento futuro. No son
+intercambiables. Cada uno tiene su momento.
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{📐 Las Tres Formas
+Principales}\label{las-tres-formas-principales}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{🔮 WILL --- El futuro
+espontáneo}\label{will-el-futuro-espontuxe1neo}
+
+\begin{verbatim}
+Sujeto  +  WILL  +  VERBO BASE
+Negativo:  won't (will not)
+\end{verbatim}
+
+\textbf{Cuándo usarlo:}
+
+\begin{verbatim}
+✅  Decisiones espontáneas (decides en el momento):
+    "I'll have the pizza."  (decides en el restaurante, ahora mismo)
+
+✅  Predicciones sin evidencia concreta (opinión):
+    "I think it will rain tomorrow."
+
+✅  Promesas y ofrecimientos:
+    "I'll help you."  /  "I'll call you later."
+
+✅  Verdades y hechos futuros:
+    "She'll be 30 next year."
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{📅 GOING TO --- El futuro
+planificado}\label{going-to-el-futuro-planificado}
+
+\begin{verbatim}
+Sujeto  +  AM/IS/ARE  +  GOING TO  +  VERBO BASE
+\end{verbatim}
+
+\textbf{Cuándo usarlo:}
+
+\begin{verbatim}
+✅  Planes ya decididos antes de hablar:
+    "I'm going to study medicine."  (ya lo tenías decidido)
+
+✅  Predicciones con EVIDENCIA VISIBLE:
+    "Look at those clouds! It's going to rain."
+    🧠 Si PUEDES VER la evidencia → going to
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{🗓️ PRESENT CONTINUOUS --- El futuro en
+agenda}\label{present-continuous-el-futuro-en-agenda}
+
+\begin{verbatim}
+Sujeto  +  AM/IS/ARE  +  VERBO-ING
+\end{verbatim}
+
+\textbf{Cuándo usarlo:}
+
+\begin{verbatim}
+✅  Planes con hora y lugar ya fijados:
+    "I'm meeting John at 6."       (está en el calendario)
+    "They're getting married in June."  (todo organizado)
+    "We're flying to Rome on Friday."
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{💡 Tabla Comparativa --- El Truco
+Visual}\label{tabla-comparativa-el-truco-visual}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.4231}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5769}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Situación
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Forma correcta
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+El teléfono suena. Decides: \emph{``¡Yo lo cojo!''} & \textbf{WILL} \\
+Ya decidiste: \emph{``Este verano viajo a Londres''} & \textbf{GOING
+TO} \\
+Tienes cita: \emph{``Ceno con María el viernes a las 8''} &
+\textbf{PRESENT CONTINUOUS} \\
+Ves nubes negras en el cielo & \textbf{GOING TO} \\
+Te piden que predices el futuro sin datos & \textbf{WILL} \\
+\end{longtable}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{⚠️ Errores Típicos}\label{errores-tuxedpicos-3}
+
+\begin{verbatim}
+❌  If it will rain, I'll stay home.
+✅  If it rains, I'll stay home.
+    (después de IF nunca uses WILL — ver Capítulo 14)
+
+❌  I going to travel next year.
+✅  I'm going to travel next year.
+
+❌  I will meet her at 8 tonight. (tienes cita confirmada)
+✅  I'm meeting her at 8 tonight.
+\end{verbatim}
+
+\part{📙 Parte 3: Nivel B1}
+
+\chapter{CAPÍTULO 8 Present
+Perfect}\label{capuxedtulo-8-present-perfect}
+
+\emph{El tiempo que más confunde a los hispanohablantes}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{quote}
+\subsection{🎯 Idea Central}\label{idea-central-6}
+
+Conecta el \textbf{pasado con el presente.} No importa exactamente
+cuándo pasó. Lo que importa es que \textbf{tiene relevancia AHORA.}
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{quote}
+\subsection{🧠 El Gran Problema
+Español}\label{el-gran-problema-espauxf1ol}
+
+En español decimos: - \emph{``He comido''} → Present Perfect -
+\emph{``Ayer comí''} → también podría traducirse igual
+
+El inglés \textbf{separa estas dos cosas radicalmente:} - Sin tiempo
+definido → \textbf{Present Perfect} - Con tiempo definido del pasado →
+\textbf{Past Simple}
+
+\textbf{Ahí está todo el lío. Y ahora ya lo sabes.}
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{📐 La Fórmula}\label{la-fuxf3rmula-3}
+
+\begin{verbatim}
+Sujeto  +  HAVE / HAS  +  PARTICIPIO PASADO
+
+I / You / We / They   →  HAVE
+He / She / It         →  HAS
+
+(+)  I have eaten.          /  She has left.
+(-)  I haven't eaten.       /  She hasn't left.
+(?)  Have you eaten?        /  Has she left?
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{💡 Los Participios Irregulares Más
+Importantes}\label{los-participios-irregulares-muxe1s-importantes}
+
+\begin{verbatim}
+be    → been        go    → gone        do    → done
+have  → had         see   → seen        take  → taken
+give  → given       write → written     eat   → eaten
+fall  → fallen      speak → spoken      break → broken
+buy   → bought      think → thought     bring → brought
+make  → made        come  → come        run   → run
+know  → known       grow  → grown       show  → shown
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{✅ Las Señales de Tiempo del Present
+Perfect}\label{las-seuxf1ales-de-tiempo-del-present-perfect}
+
+\begin{verbatim}
+just       →  acabar de:        "I've just eaten."
+ever       →  alguna vez:       "Have you ever been to Japan?"
+never      →  nunca:            "I've never tried sushi."
+already    →  ya:               "She's already left."
+yet        →  todavía / ya:     "I haven't finished yet." / "Have you eaten yet?"
+since      →  desde:            "I've lived here since 2010."
+for        →  durante:          "I've lived here for 5 years."
+recently   →  recientemente:    "I've recently started running."
+lately     →  últimamente:      "Have you been okay lately?"
+so far     →  hasta ahora:      "So far, I've read 3 chapters."
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{💡 Truco --- SINCE vs FOR}\label{truco-since-vs-for}
+
+\begin{verbatim}
+SINCE  →  punto específico en el tiempo (cuándo empezó)
+FOR    →  duración (cuánto tiempo lleva)
+
+SINCE:   since 2010 / since Monday / since I was a child / since we met
+FOR:     for 5 years / for two months / for a long time / for ages
+
+🧠  SINCE = Since a Specific moment
+🧠  FOR   = FOR a duration (cantidad de tiempo)
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{💡 La Regla de Oro --- Perfect vs
+Simple}\label{la-regla-de-oro-perfect-vs-simple}
+
+\begin{verbatim}
+┌─────────────────────────────────────────────────────────┐
+│  ¿Hay tiempo DEFINIDO del pasado en la frase?           │
+│  (yesterday, last week, in 2010, ago, when I was...)    │
+│                                                         │
+│  SÍ  →  PAST SIMPLE                                     │
+│  NO  →  PRESENT PERFECT                                 │
+└─────────────────────────────────────────────────────────┘
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{✅ Tabla Comparativa --- Perfect vs
+Simple}\label{tabla-comparativa-perfect-vs-simple}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5517}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.4483}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Present Perfect
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Past Simple
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+I've lost my keys. \emph{(siguen perdidas)} & I lost my keys
+yesterday. \\
+She's broken her arm. & She broke her arm in 2020. \\
+Have you ever eaten Thai food? & Did you eat Thai food last night? \\
+He's written three novels. \emph{(logro)} & He wrote his first novel in
+2005. \\
+\end{longtable}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{⚠️ Error Crítico --- El Más
+Común}\label{error-cruxedtico-el-muxe1s-comuxfan}
+
+\begin{verbatim}
+❌  I have seen her yesterday.
+✅  I saw her yesterday.
+
+❌  Did you ever try sushi?
+✅  Have you ever tried sushi?
+
+❌  I have gone to Paris in 2015.
+✅  I went to Paris in 2015.
+\end{verbatim}
+
+\chapter{CAPÍTULO 9 Present Perfect
+Continuous}\label{capuxedtulo-9-present-perfect-continuous}
+
+\emph{``Llevo haciendo esto un tiempo\ldots{} y se nota''}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{quote}
+\subsection{🎯 Idea Central}\label{idea-central-7}
+
+Acción que \textbf{empezó en el pasado, continúa ahora} y tiene un
+\textbf{resultado o efecto visible en el presente.}
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{📐 La Fórmula}\label{la-fuxf3rmula-4}
+
+\begin{verbatim}
+Sujeto  +  HAVE/HAS  +  BEEN  +  VERBO-ING
+
+(+)  I have been studying for 3 hours.
+(-)  She hasn't been sleeping well.
+(?)  Have they been waiting long?
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{✅ Ejemplos con Contexto}\label{ejemplos-con-contexto}
+
+\begin{verbatim}
+"I've been studying for 3 hours."
+→ Llevo 3 horas estudiando (y todavía sigo / o acabo de parar agotado)
+
+"She's been crying."
+→ Ha estado llorando (se le nota: ojos rojos, cara hinchada)
+
+"They've been working all day."
+→ Han estado trabajando todo el día (están exhaustos ahora)
+
+"It's been raining."
+→ Ha estado lloviendo (el suelo está mojado)
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{💡 Truco --- Perfect vs Perfect
+Continuous}\label{truco-perfect-vs-perfect-continuous}
+
+\begin{verbatim}
+PRESENT PERFECT           →  resultado / logro / cantidad
+"I've written 3 emails."  →  (están escritos, importa el resultado)
+"She's read the report."  →  (lo terminó, está hecho)
+
+PRESENT PERFECT CONTINUOUS  →  proceso / duración / actividad en sí
+"I've been writing emails all morning."
+→ (importa que llevo tiempo haciéndolo, quizás no terminé)
+"She's been reading the report."
+→ (está en proceso, puede que no haya terminado)
+\end{verbatim}
+
+\chapter{CAPÍTULO 10 Past Perfect}\label{capuxedtulo-10-past-perfect}
+
+\emph{El pasado del pasado}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{quote}
+\subsection{🎯 Idea Central}\label{idea-central-8}
+
+Cuando ya estás hablando del pasado y necesitas referirte a algo que
+pasó \textbf{AÚN ANTES.} Es el \textbf{flashback} gramatical del inglés.
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{📐 La Fórmula}\label{la-fuxf3rmula-5}
+
+\begin{verbatim}
+Sujeto  +  HAD  +  PARTICIPIO PASADO
+(HAD es igual para todos los sujetos — nunca cambia)
+
+(+)  She had left before I arrived.
+(-)  He hadn't eaten when we called.
+(?)  Had they finished when you got there?
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{💡 Línea de Tiempo Visual}\label{luxednea-de-tiempo-visual}
+
+\begin{verbatim}
+PASADO  ←──────────────────────────────────────→  PRESENTE
+
+    HAD FINISHED          ARRIVED
+           │                 │
+    ───────●─────────────────●──────────────────▶
+    (pasado del          (pasado)
+      pasado)
+
+"When I arrived, the party had already finished."
+ → Primero terminó la fiesta, DESPUÉS llegué yo.
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{✅ Ejemplos en Contexto}\label{ejemplos-en-contexto}
+
+\begin{verbatim}
+"She was tired because she hadn't slept."
+→ Primero no durmió → después estaba cansada.
+
+"He recognized her because he had seen her before."
+→ Primero la vio → después la reconoció.
+
+"By the time we arrived, they had already left."
+→ Se fueron antes de que llegáramos.
+
+"I realized I had forgotten my wallet."
+→ Me di cuenta de que lo había olvidado (antes).
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{🔥 Tip para el Examen}\label{tip-para-el-examen-3}
+
+\begin{quote}
+El Past Perfect es \textbf{CLAVE} en: - \textbf{Reported Speech}
+\emph{(ver Capítulo 13)} - \textbf{Third Conditional} \emph{(ver
+Capítulo 14)} - \textbf{Narrativa avanzada} en writing
+
+Si dominas el Past Perfect, dominas el B2.
+\end{quote}
+
+\chapter{CAPÍTULO 11 Modal Verbs}\label{capuxedtulo-11-modal-verbs}
+
+\emph{Los verbos con personalidad propia}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{quote}
+\subsection{🎯 Idea Central}\label{idea-central-9}
+
+Los modales no expresan acciones. Expresan tu \textbf{ACTITUD} hacia la
+acción: obligación, posibilidad, permiso, capacidad, consejo.
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{📐 Reglas Universales de los
+Modales}\label{reglas-universales-de-los-modales}
+
+\begin{verbatim}
+1.  NUNCA llevan -S en tercera persona:
+    ❌  He cans swim.    →  ✅  He can swim.
+
+2.  NUNCA van con TO (excepto: ought to, have to, used to):
+    ❌  She must to go.  →  ✅  She must go.
+
+3.  SIEMPRE van seguidos de VERBO BASE:
+    ❌  I should studied. →  ✅  I should study.
+
+4.  Forman negación directamente con NOT:
+    ❌  I don't can swim. →  ✅  I can't swim.
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{📐 La Familia Completa de
+Modales}\label{la-familia-completa-de-modales}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{🔵 CAN / COULD --- Habilidad y
+Permiso}\label{can-could-habilidad-y-permiso}
+
+\begin{verbatim}
+CAN (presente / informal):
+"I can swim."                →  Sé nadar.
+"Can I open the window?"     →  ¿Puedo abrir la ventana? (informal)
+
+COULD (pasado / formal / tentativo):
+"I could swim when I was 5." →  Sabía nadar cuando tenía 5 años.
+"Could I use your phone?"    →  ¿Podría usar tu teléfono? (formal)
+"Could you help me?"         →  ¿Podrías ayudarme? (petición educada)
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{🟡 MUST / HAVE TO ---
+Obligación}\label{must-have-to-obligaciuxf3n}
+
+\begin{verbatim}
+MUST  →  obligación INTERNA (viene de ti mismo)
+"I must study."              →  Debo estudiar. (me lo digo a mí mismo)
+"You must try this!"         →  ¡Tienes que probarlo! (recomendación fuerte)
+
+HAVE TO  →  obligación EXTERNA (reglas, otras personas)
+"I have to wear a uniform."  →  Tengo que llevar uniforme. (reglas del trabajo)
+"She has to be home by 11."  →  Tiene que estar en casa. (sus padres lo dicen)
+\end{verbatim}
+
+\begin{quote}
+🧠 \textbf{Truco definitivo:} \textbf{MUST} = viene de \textbf{MÍ}
+\textbf{HAVE TO} = viene de \textbf{FUERA}
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{🔴 MUSTN'T vs DON'T HAVE TO --- ¡Los más
+confundidos!}\label{mustnt-vs-dont-have-to-los-muxe1s-confundidos}
+
+\begin{verbatim}
+┌────────────────────────────────────────────────────────┐
+│  MUSTN'T  =  PROHIBICIÓN  (NO debes hacer esto)        │
+│  "You mustn't smoke here."  →  Está PROHIBIDO fumar.   │
+│                                                         │
+│  DON'T HAVE TO  =  NO ES NECESARIO (pero puedes)       │
+│  "You don't have to come."  →  No tienes que venir.    │
+│                                (es opcional, decides tú)│
+└────────────────────────────────────────────────────────┘
+\end{verbatim}
+
+\begin{quote}
+⚠️ \textbf{Este error puede ser catastrófico en contexto real:}
+
+\begin{verbatim}
+Situación: la entrada es gratuita.
+❌  "You mustn't pay."     →  suena como que está PROHIBIDO pagar
+✅  "You don't have to pay."  →  no es necesario pagar
+\end{verbatim}
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{🟢 SHOULD / OUGHT TO --- Consejo y
+Recomendación}\label{should-ought-to-consejo-y-recomendaciuxf3n}
+
+\begin{verbatim}
+SHOULD  →  consejo, recomendación, opinión
+"You should see a doctor."    →  Deberías ver a un médico.
+"Should I tell her?"          →  ¿Debería decírselo?
+
+OUGHT TO  →  igual que should, ligeramente más formal
+"You ought to apologize."     →  Deberías disculparte.
+"They ought to arrive soon."  →  Deberían llegar pronto.
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{⚪ MAY / MIGHT --- Posibilidad}\label{may-might-posibilidad}
+
+\begin{verbatim}
+MAY    →  posibilidad más alta (~50% o más)
+"It may rain today."          →  Puede que llueva hoy.
+"May I come in?"              →  ¿Puedo pasar? (permiso MUY formal)
+
+MIGHT  →  posibilidad más baja (~30% o menos)
+"I might go to the party."    →  Igual voy a la fiesta (no estoy seguro).
+"She might be late."          →  Puede que llegue tarde.
+\end{verbatim}
+
+\begin{quote}
+🧠 \textbf{Truco:} MIGHT = \textbf{Maybe I will, maybe I won't}
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{📐 Tabla Resumen de Modales}\label{tabla-resumen-de-modales}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.2800}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3600}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3600}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Modal
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Función
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Ejemplo
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{can} & habilidad / permiso informal & I can drive. \\
+\textbf{could} & habilidad pasada / petición formal & Could you help? \\
+\textbf{must} & obligación interna / deducción fuerte & You must be
+tired. \\
+\textbf{have to} & obligación externa & I have to work. \\
+\textbf{mustn't} & prohibición absoluta & You mustn't lie. \\
+\textbf{don't have to} & no es necesario & You don't have to pay. \\
+\textbf{should} & consejo / recomendación & You should rest. \\
+\textbf{ought to} & consejo formal & You ought to apologize. \\
+\textbf{may} & posibilidad alta / permiso formal & It may snow. \\
+\textbf{might} & posibilidad baja & I might come. \\
+\textbf{would} & condicional / petición educada & Would you
+like\ldots? \\
+\textbf{shall} & sugerencia / ofrecimiento (formal) & Shall we go? \\
+\end{longtable}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{🔥 Modales Perfectos --- Nivel B2
+Puro}\label{modales-perfectos-nivel-b2-puro}
+
+\begin{quote}
+\textbf{Estructura:} MODAL + HAVE + PARTICIPIO PASADO Usados para hacer
+\textbf{deducciones, críticas y especulaciones sobre el pasado.}
+\end{quote}
+
+\begin{verbatim}
+MUST HAVE + participio     →  deducción casi segura sobre el pasado
+"She must have forgotten." →  Debe haber olvidado. (estoy casi seguro)
+
+CAN'T HAVE + participio    →  imposibilidad en el pasado
+"He can't have said that." →  No puede haber dicho eso. (imposible)
+
+SHOULD HAVE + participio   →  crítica o lamento sobre el pasado
+"I should have studied."   →  Debería haber estudiado. (pero no lo hice)
+
+COULD HAVE + participio    →  posibilidad no aprovechada
+"You could have told me!"  →  ¡Podrías haberme dicho! (pero no lo hiciste)
+
+MIGHT HAVE + participio    →  posibilidad en el pasado
+"She might have missed it."→  Puede que lo haya perdido.
+
+NEEDN'T HAVE + participio  →  hiciste algo que no era necesario
+"You needn't have cooked." →  No hacía falta que cocinaras.
+\end{verbatim}
+
+\chapter{CAPÍTULO 12 Passive Voice}\label{capuxedtulo-12-passive-voice}
+
+\emph{Cuando el QUÉ importa más que el QUIÉN}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{quote}
+\subsection{🎯 Idea Central}\label{idea-central-10}
+
+Usamos la pasiva cuando: 1. No sabemos quién hizo la acción 2. No
+importa quién la hizo 3. Es obvio quién la hizo 4. Queremos sonar más
+\textbf{formal o académico}
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{📐 La Fórmula Maestra}\label{la-fuxf3rmula-maestra}
+
+\begin{verbatim}
+Sujeto  +  TO BE (tiempo correcto)  +  PARTICIPIO PASADO
+                        ↑
+            Este es el que cambia según el tiempo verbal
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{📐 Tabla de Transformación por
+Tiempos}\label{tabla-de-transformaciuxf3n-por-tiempos}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.2581}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3548}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3871}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Tiempo
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Voz Activa
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Voz Pasiva
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Present Simple & They make cars here. & Cars \textbf{are made} here. \\
+Past Simple & They built this in 1900. & This \textbf{was built} in
+1900. \\
+Present Continuous & They are filming it. & It \textbf{is being
+filmed.} \\
+Past Continuous & They were repairing it. & It \textbf{was being
+repaired.} \\
+Present Perfect & They have arrested him. & He \textbf{has been
+arrested.} \\
+Past Perfect & They had warned us. & We \textbf{had been warned.} \\
+Future (will) & They will announce it. & It \textbf{will be
+announced.} \\
+Modal & They must fix it. & It \textbf{must be fixed.} \\
+Infinitive & They want to sell it. & It \textbf{is to be sold.} \\
+\end{longtable}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{💡 Los 3 Pasos de
+Transformación}\label{los-3-pasos-de-transformaciuxf3n}
+
+\begin{verbatim}
+ACTIVA:   The chef    cooks    the meal    every day.
+               ↓         ↓         ↓
+PASIVA:   The meal   IS COOKED  (by the chef)  every day.
+
+Paso 1:  El OBJETO de la activa → SUJETO de la pasiva
+Paso 2:  TO BE se conjuga en el mismo tiempo
+Paso 3:  El verbo → PARTICIPIO PASADO
+         (el agente "by + persona" es opcional)
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{✅ Cuándo Usar o No el ``By +
+Agente''}\label{cuuxe1ndo-usar-o-no-el-by-agente}
+
+\begin{verbatim}
+Se OMITE cuando:
+- Es obvio:   "He was arrested."  (por la policía, obvio)
+- No se sabe: "The window was broken."  (no sabemos quién)
+
+Se INCLUYE cuando:
+- Es importante saber quién:
+  "The theory was developed by Einstein."
+  "The novel was written by García Márquez."
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{⚠️ Errores Frecuentes}\label{errores-frecuentes}
+
+\begin{verbatim}
+❌  The car was broke.          →  ✅  The car was broken.
+❌  It was builded in 1800.     →  ✅  It was built in 1800.
+❌  The letter has been writed. →  ✅  The letter has been written.
+❌  It was been stolen.         →  ✅  It was stolen. / It has been stolen.
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{🔥 Tip para el Examen B2}\label{tip-para-el-examen-b2-1}
+
+\begin{quote}
+La pasiva es \textbf{muy frecuente} en writing formal y académico.
+Aprende estas estructuras de memoria:
+
+\begin{verbatim}
+"It is believed that..."          →  Se cree que...
+"It has been proven that..."      →  Se ha demostrado que...
+"It is widely accepted that..."   →  Es ampliamente aceptado que...
+"Research has been conducted..."  →  Se ha realizado una investigación...
+"The results were published in..."→  Los resultados fueron publicados en...
+\end{verbatim}
+\end{quote}
+
+\chapter{CAPÍTULO 13 Reported
+Speech}\label{capuxedtulo-13-reported-speech}
+
+\emph{``Me dijeron que\ldots{}'' --- El arte de contar lo que dijo
+alguien}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{quote}
+\subsection{🎯 Idea Central}\label{idea-central-11}
+
+Cuando reportas lo que alguien dijo, el tiempo verbal \textbf{retrocede
+un paso} en el pasado. Es como si el tiempo ``se alejara'' un nivel.
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{💡 La Escalera del Tiempo ---
+Backshift}\label{la-escalera-del-tiempo-backshift}
+
+\begin{verbatim}
+╔══════════════════════════════════════════════════════════╗
+║  DIRECT SPEECH          →    REPORTED SPEECH            ║
+╠══════════════════════════════════════════════════════════╣
+║  Present Simple         →    Past Simple                 ║
+║  "I work here."              She said she worked there.  ║
+╠══════════════════════════════════════════════════════════╣
+║  Present Continuous     →    Past Continuous             ║
+║  "I am working."             She said she was working.   ║
+╠══════════════════════════════════════════════════════════╣
+║  Past Simple            →    Past Perfect                ║
+║  "I worked hard."            She said she had worked.    ║
+╠══════════════════════════════════════════════════════════╣
+║  Present Perfect        →    Past Perfect                ║
+║  "I have seen it."           She said she had seen it.   ║
+╠══════════════════════════════════════════════════════════╣
+║  Will                   →    Would                       ║
+║  "I will call."              She said she would call.    ║
+╠══════════════════════════════════════════════════════════╣
+║  Can                    →    Could                       ║
+║  "I can help."               She said she could help.    ║
+╠══════════════════════════════════════════════════════════╣
+║  May                    →    Might                       ║
+║  "I may come."               She said she might come.    ║
+╠══════════════════════════════════════════════════════════╣
+║  Must                   →    Had to                      ║
+║  "I must go."                She said she had to go.     ║
+╚══════════════════════════════════════════════════════════╝
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{💡 También Cambian las Expresiones de Tiempo y
+Lugar}\label{tambiuxe9n-cambian-las-expresiones-de-tiempo-y-lugar}
+
+\begin{verbatim}
+here         →  there
+now          →  then
+today        →  that day
+tomorrow     →  the next day / the following day
+yesterday    →  the day before / the previous day
+this         →  that
+these        →  those
+...ago       →  ...before
+next week    →  the following week
+last week    →  the previous week
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{📐 Reported Questions --- Cuidado con el
+Orden}\label{reported-questions-cuidado-con-el-orden}
+
+\begin{verbatim}
+Wh- Questions:
+Direct:   "Where do you live?" he asked.
+Reported: He asked where I lived.
+                              ↑
+                    orden afirmativo (sin inversión)
+                    + tiempo atrás
+
+Yes/No Questions  →  IF o WHETHER:
+Direct:   "Are you coming?" she asked.
+Reported: She asked if / whether I was coming.
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{📐 Reported Orders e
+Instrucciones}\label{reported-orders-e-instrucciones}
+
+\begin{verbatim}
+Órdenes:
+"Open the window!"     →  He told me TO OPEN the window.
+"Don't touch that!"    →  She told me NOT TO TOUCH that.
+
+Peticiones:
+"Please help me."      →  She asked me TO HELP her.
+
+Consejo:
+"You should rest."     →  He advised me TO REST.
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{⚠️ Errores Típicos}\label{errores-tuxedpicos-4}
+
+\begin{verbatim}
+❌  He said me that he was tired.   →  ✅  He told me that he was tired.
+❌  She said that she is tired.     →  ✅  She said that she was tired.
+❌  He asked where did I live.      →  ✅  He asked where I lived.
+\end{verbatim}
+
+\begin{quote}
+🧠 \textbf{SAY vs TELL:}
+
+\begin{verbatim}
+SAY  →  sin objeto directo de persona:  He said (that)...
+TELL →  con objeto directo de persona:  He told ME (that)...
+\end{verbatim}
+\end{quote}
+
+\part{📕 Parte 4: Nivel B2}
+
+\chapter{CAPÍTULO 14 -
+Conditionals}\label{capuxedtulo-14---conditionals}
+
+\emph{El capítulo más temido --- Desmitificado para siempre}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{quote}
+\subsection{🎯 Idea Central}\label{idea-central-12}
+
+Los condicionales hablan de \textbf{condiciones y sus consecuencias.} La
+clave está en entender qué tan \textbf{REAL o POSIBLE} es la situación.
+Una vez entiendes eso, las fórmulas tienen sentido lógico.
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{📐 Los Cuatro Condicionales}\label{los-cuatro-condicionales}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{🟢 ZERO CONDITIONAL --- Las verdades
+universales}\label{zero-conditional-las-verdades-universales}
+
+\begin{verbatim}
+IF  +  Present Simple,  Present Simple
+
+"If you heat water to 100°C, it boils."
+"If I don't sleep, I feel terrible."
+"Plants die if they don't get water."
+
+Cuándo usarlo:
+✅  Hechos científicos y verdades universales
+✅  Instrucciones y procesos
+✅  Hábitos y rutinas (IF = WHEN, son intercambiables aquí)
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{🔵 FIRST CONDITIONAL --- Lo que puede pasar de
+verdad}\label{first-conditional-lo-que-puede-pasar-de-verdad}
+
+\begin{verbatim}
+IF  +  Present Simple,  WILL  +  Verbo Base
+
+"If it rains, I will take an umbrella."
+"If you study hard, you will pass."
+"I'll call you if I'm late."
+
+Cuándo usarlo:
+✅  Situación REAL y POSIBLE en el futuro
+✅  Hay una probabilidad genuina de que ocurra
+⚠️  NUNCA uses WILL después de IF: "If it will rain" ❌
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{🟡 SECOND CONDITIONAL --- La fantasía del
+presente/futuro}\label{second-conditional-la-fantasuxeda-del-presentefuturo}
+
+\begin{verbatim}
+IF  +  Past Simple,  WOULD  +  Verbo Base
+
+"If I had a million dollars, I would travel the world."
+"If I were you, I would apologize."
+"What would you do if you won the lottery?"
+
+Cuándo usarlo:
+✅  Situación IRREAL o muy improbable AHORA o en el FUTURO
+✅  Estás imaginando una realidad alternativa
+✅  Dar consejos de forma indirecta
+\end{verbatim}
+
+\begin{quote}
+💡 \textbf{Truco especial --- IF I WERE:}
+
+\begin{verbatim}
+En inglés formal y B2:  "If I were you..."  ✅
+En inglés informal:     "If I was you..."   ✅ (aceptable)
+En B2 escrito:          usa WERE siempre    🔥
+\end{verbatim}
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{🔴 THIRD CONDITIONAL --- El arrepentimiento del
+pasado}\label{third-conditional-el-arrepentimiento-del-pasado}
+
+\begin{verbatim}
+IF  +  Past Perfect,  WOULD HAVE  +  Participio
+
+"If I had studied, I would have passed the exam."
+"If she had called, I would have answered."
+"We wouldn't have been late if we had left earlier."
+
+Cuándo usarlo:
+✅  Situación IRREAL en el PASADO — ya no se puede cambiar
+✅  Lamentos, arrepentimientos, críticas
+✅  Especular sobre situaciones pasadas alternativas
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{💡 El Mapa Visual de los
+Condicionales}\label{el-mapa-visual-de-los-condicionales}
+
+\begin{verbatim}
+REAL ◄─────────────────────────────────► IRREAL
+
+   0              1              2              3
+SIEMPRE        POSIBLE       IMPROBABLE     IMPOSIBLE
+                              /irreal       (ya pasó)
+
+agua→vapor   llueve→       millonario→    estudié más→
+             paraguas       viajo          aprobé
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{🔥 Mixed Conditionals --- Solo
+B2}\label{mixed-conditionals-solo-b2}
+
+\begin{quote}
+Mezclas el tiempo de la \textbf{condición} y el \textbf{resultado:}
+\end{quote}
+
+\begin{verbatim}
+PASADO IRREAL  →  consecuencia en el PRESENTE:
+IF + Past Perfect,  WOULD + Verbo Base
+
+"If I had studied medicine, I would be a doctor now."
+→ (No estudié medicina en el pasado → ahora no soy médico)
+
+PRESENTE IRREAL  →  consecuencia en el PASADO:
+IF + Past Simple,  WOULD HAVE + Participio
+
+"If I weren't so lazy, I would have finished it by now."
+→ (Soy vago [presente] → no lo terminé [pasado])
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{⚠️ Errores Clásicos con
+Condicionales}\label{errores-cluxe1sicos-con-condicionales}
+
+\begin{verbatim}
+❌  If I would have money, I would travel.
+✅  If I had money, I would travel.
+
+❌  If I would study, I will pass.
+✅  If I study, I will pass.
+
+❌  If she would have called...
+✅  If she had called...
+
+❌  I would have went if I had known.
+✅  I would have gone if I had known.
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{📝 Mini Test Mental}\label{mini-test-mental}
+
+\begin{quote}
+Elige el condicional correcto: 1. \emph{``\_\_\_ you heat ice, it
+melts.''} 2. \emph{``\_\_\_ I were rich, I would buy a yacht.''} 3.
+\emph{``\_\_\_ it rains tomorrow, we'll cancel.''} 4. \emph{``\_\_\_ she
+had studied, she would have passed.''}
+
+\emph{(Respuestas: 1-If/When · 2-If · 3-If · 4-If)}
+\end{quote}
+
+\chapter{CAPÍTULO 15 - Relative
+Clauses}\label{capuxedtulo-15---relative-clauses}
+
+\emph{Las frases que dan información extra}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{quote}
+\subsection{🎯 Idea Central}\label{idea-central-13}
+
+Las relative clauses añaden información sobre un sustantivo usando
+pronombres relativos. La gran pregunta es: ¿esa información es
+\textbf{ESENCIAL} o \textbf{EXTRA}?
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{📐 Los Pronombres Relativos}\label{los-pronombres-relativos}
+
+\begin{verbatim}
+WHO    →  personas
+WHICH  →  cosas / animales
+THAT   →  personas o cosas (uso informal/coloquial)
+WHOSE  →  posesión (cuyo/a — de quien / de lo que)
+WHERE  →  lugares
+WHEN   →  tiempo
+WHY    →  razón (solo con "the reason")
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{📐 Defining vs Non-Defining}\label{defining-vs-non-defining}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsubsection{🔵 DEFINING --- Información ESENCIAL (sin
+comas)}\label{defining-informaciuxf3n-esencial-sin-comas}
+
+\begin{verbatim}
+"The woman WHO called you is my sister."
+→  Sin esa información, no sabes de qué mujer hablas.
+→  La cláusula define / identifica al sustantivo.
+→  NO lleva comas.
+→  Puedes usar THAT en lugar de WHO o WHICH.
+→  Puedes OMITIR el pronombre si es objeto:
+   "The book (that) I bought is great."  ✅
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{🔴 NON-DEFINING --- Información EXTRA (con
+comas)}\label{non-defining-informaciuxf3n-extra-con-comas}
+
+\begin{verbatim}
+"My sister, WHO lives in London, called you."
+→  Ya sabes de qué hermana hablas. La info es adicional.
+→  Entre comas. Si se elimina, la frase sigue siendo correcta.
+→  NO puedes usar THAT.
+→  NO puedes omitir el pronombre relativo.
+→  En lenguaje oral → pausa antes y después.
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{💡 Tabla Comparativa}\label{tabla-comparativa}
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule\noalign{}
+& Defining & Non-Defining \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Comas & ❌ Sin comas & ✅ Con comas \\
+THAT & ✅ Se puede usar & ❌ No se puede \\
+Omitir pronombre & ✅ Si es objeto & ❌ Nunca \\
+Sin ella, la frase\ldots{} & pierde el sentido & sigue siendo
+correcta \\
+\end{longtable}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{✅ Ejemplos Comparados}\label{ejemplos-comparados-1}
+
+\begin{verbatim}
+DEFINING:
+"The man who stole the car was arrested."
+→  (qué hombre — el que robó el coche)
+
+NON-DEFINING:
+"John, who stole the car, was arrested."
+→  (ya sabemos que es John, añadimos info extra)
+
+DEFINING:
+"The book that I recommended is a bestseller."
+
+NON-DEFINING:
+"'Don Quixote', which was written by Cervantes, is a classic."
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{⚠️ Errores Frecuentes}\label{errores-frecuentes-1}
+
+\begin{verbatim}
+❌  The book which I bought it is great.
+✅  The book which I bought is great.
+    (el relativo YA hace la función de objeto, no añadas "it")
+
+❌  My brother, that lives in Paris, is a chef.
+✅  My brother, who lives in Paris, is a chef.
+    (non-defining → no uses THAT)
+
+❌  The city where I visited was beautiful.
+✅  The city which/that I visited was beautiful.
+    (WHERE = en donde, aquí es objeto directo, no lugar)
+    ✅  The city where I was born was beautiful.  (aquí sí es correcto)
+\end{verbatim}
+
+\chapter{CAPÍTULO 16. Wish \& If
+Only}\label{capuxedtulo-16.-wish-if-only}
+
+\emph{El club de los que lamentan}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{quote}
+\subsection{🎯 Idea Central}\label{idea-central-14}
+
+\textbf{WISH} expresa deseos sobre situaciones \textbf{contrarias a la
+realidad.} Es la gramática del ``ojalá'' y el ``si tan solo\ldots{}''
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{📐 Las Tres Estructuras de
+WISH}\label{las-tres-estructuras-de-wish}
+
+\begin{verbatim}
+WISH  +  Past Simple
+→  Deseo sobre el PRESENTE (algo irreal ahora)
+"I wish I spoke Spanish."     →  Ojalá hablara español. (no hablo)
+"I wish I had more time."     →  Ojalá tuviera más tiempo. (no tengo)
+"I wish it were Friday."      →  Ojalá fuera viernes. (no lo es)
+
+WISH  +  Past Perfect
+→  Deseo / lamento sobre el PASADO (ya no se puede cambiar)
+"I wish I had studied more."  →  Ojalá hubiera estudiado más. (no estudié)
+"I wish I hadn't said that."  →  Ojalá no lo hubiera dicho.
+
+WISH  +  WOULD
+→  Deseo de cambio de comportamiento (queja / irritación)
+"I wish you would stop smoking."  →  Ojalá dejaras de fumar.
+"I wish it would stop raining."   →  Ojalá dejara de llover.
+⚠️  No uses WISH + WOULD para ti mismo:
+❌  I wish I would study more.  →  ✅  I wish I studied more.
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{💡 Truco --- WISH vs HOPE}\label{truco-wish-vs-hope}
+
+\begin{verbatim}
+WISH  →  la realidad es diferente a lo que quieres
+         (es irreal, imposible o muy improbable ahora)
+"I wish I were taller."   →  (no lo soy, es un hecho)
+
+HOPE  →  la situación es posible, esperas que ocurra
+"I hope it doesn't rain." →  (es posible que no llueva)
+"I hope you feel better." →  (es posible que te mejores)
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{🔥 IF ONLY --- El WISH más
+dramático}\label{if-only-el-wish-muxe1s-dramuxe1tico}
+
+\begin{verbatim}
+IF ONLY tiene las mismas estructuras que WISH
+pero con mucho más énfasis emocional:
+
+"If only I had more money!"     →  ¡Si tan solo tuviera más dinero!
+"If only I hadn't trusted him!" →  ¡Si tan solo no le hubiera creído!
+"If only you would listen!"     →  ¡Si tan solo escucharas!
+\end{verbatim}
+
+\chapter{CAPÍTULO 17 Phrasal Verbs}\label{capuxedtulo-17-phrasal-verbs}
+
+\emph{El código secreto del inglés real}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{quote}
+\subsection{🎯 Idea Central}\label{idea-central-15}
+
+Verbo + partícula = significado completamente nuevo. \textbf{No los
+traduzcas literalmente. Agrúpalos por partículas.} Aprende el
+significado de la partícula y entenderás grupos enteros a la vez.
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{💡 El Significado de las
+Partículas}\label{el-significado-de-las-partuxedculas}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{⬆️ UP --- Completar, aumentar, mejorar,
+finalizar}\label{up-completar-aumentar-mejorar-finalizar}
+
+\begin{verbatim}
+give UP      →  rendirse           "Don't give up!"
+wake UP      →  despertar          "Wake up! It's late."
+grow UP      →  crecer             "I grew up in Madrid."
+end UP       →  terminar siendo    "I ended up staying home."
+set UP       →  establecer/crear   "She set up her own company."
+come UP with →  ocurrírsele algo   "He came up with a great idea."
+build UP     →  desarrollar        "She built up her confidence."
+make UP      →  inventar / maquillarse "He made up an excuse."
+turn UP      →  aparecer / subir volumen "She turned up late."
+clean UP     →  limpiar del todo   "Clean up your room!"
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{⬇️ OUT --- Salir, descubrir, completar,
+extinguir}\label{out-salir-descubrir-completar-extinguir}
+
+\begin{verbatim}
+find OUT     →  descubrir          "I found out the truth."
+run OUT of   →  quedarse sin       "We've run out of milk."
+work OUT     →  hacer ejercicio / resolver "It worked out fine."
+turn OUT     →  resultar           "It turned out to be great."
+carry OUT    →  llevar a cabo      "They carried out the plan."
+point OUT    →  señalar            "She pointed out the mistake."
+figure OUT   →  entender/resolver  "I can't figure it out."
+put OUT      →  apagar / extinguir "Put out the fire!"
+stand OUT    →  destacar           "She always stands out."
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{❌ OFF --- Separación, cancelación, salida,
+inicio}\label{off-separaciuxf3n-cancelaciuxf3n-salida-inicio}
+
+\begin{verbatim}
+turn OFF     →  apagar             "Turn off the light."
+put OFF      →  posponer           "Don't put it off!"
+take OFF     →  despegar / quitarse "The plane took off."
+call OFF     →  cancelar           "They called off the meeting."
+set OFF      →  partir / salir     "We set off at 7am."
+pay OFF      →  merecer la pena    "Hard work always pays off."
+show OFF     →  presumir           "Stop showing off!"
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{▶️ ON --- Continuación, conexión,
+avance}\label{on-continuaciuxf3n-conexiuxf3n-avance}
+
+\begin{verbatim}
+carry ON     →  continuar          "Carry on with your work."
+get on with  →  llevarse bien / continuar "I get on with my boss."
+hold ON      →  esperar            "Hold on a moment."
+move ON      →  seguir adelante    "It's time to move on."
+rely ON      →  depender de        "You can rely on me."
+take ON      →  asumir / contratar "She took on a new project."
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{🔄 INTO --- Transformación, investigación,
+choque}\label{into-transformaciuxf3n-investigaciuxf3n-choque}
+
+\begin{verbatim}
+turn INTO    →  convertirse en     "Water turns into ice."
+break INTO   →  entrar a la fuerza "They broke into the house."
+look INTO    →  investigar         "Police are looking into it."
+run INTO     →  encontrarse con    "I ran into my old teacher."
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{🔙 BACK --- Retorno, devolución,
+reciprocidad}\label{back-retorno-devoluciuxf3n-reciprocidad}
+
+\begin{verbatim}
+get BACK     →  volver / recuperar "I got back home late."
+give BACK    →  devolver           "Give back what you took."
+call BACK    →  devolver la llamada "I'll call you back."
+look BACK    →  mirar atrás / recordar "Looking back, I understand."
+pay BACK     →  devolver dinero    "I'll pay you back tomorrow."
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{⚠️ Phrasal Verbs Separables vs
+Inseparables}\label{phrasal-verbs-separables-vs-inseparables}
+
+\begin{verbatim}
+SEPARABLES  →  puedes poner el objeto entre el verbo y la partícula:
+"Turn off the light."    ✅
+"Turn the light off."    ✅
+"Turn it off."           ✅  (pronombre: SIEMPRE en el medio)
+"Turn off it."           ❌  (pronombre nunca al final)
+
+INSEPARABLES  →  el objeto va siempre después de la partícula:
+"Look after the children."  ✅
+"Look the children after."  ❌
+"Look after them."          ✅
+\end{verbatim}
+
+\chapter{CAPÍTULO 18 Linking Words \&
+Connectors}\label{capuxedtulo-18-linking-words-connectors}
+
+\emph{El pegamento de tus ideas --- Esencial para el B2}
+
+\begin{quote}
+\subsection{🎯 Idea Central}\label{idea-central-16}
+
+Los conectores convierten una lista de ideas en un texto que
+\textbf{FLUYE naturalmente.} Sin ellos, tienes frases. Con ellos, tienes
+un texto.
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{📐 Categorías de Conectores}\label{categoruxedas-de-conectores}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{➕ AÑADIR IDEAS}\label{auxf1adir-ideas}
+
+\begin{verbatim}
+Furthermore      →  Además (más formal que "also")
+Moreover         →  Es más / Además (aún más formal)
+In addition      →  Adicionalmente
+What is more     →  Es más
+Not only... but also → No solo... sino también
+Also             →  También (menos formal)
+Besides          →  Además / Aparte de eso
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{↔️ CONTRASTAR Y CONCEDER}\label{contrastar-y-conceder}
+
+\begin{verbatim}
+However          →  Sin embargo
+Nevertheless     →  No obstante (más formal)
+Nonetheless      →  No obstante (muy formal)
+On the other hand→  Por otro lado
+In contrast      →  En contraste
+Although         →  Aunque (+ frase completa)
+Though           →  Aunque (más informal, puede ir al final)
+Even though      →  Aunque (con más énfasis)
+Despite          →  A pesar de (+ nombre o -ING)
+In spite of      →  A pesar de (+ nombre o -ING)
+Whereas          →  Mientras que / En cambio
+While            →  Mientras que (contraste)
+Yet              →  Sin embargo (formal, después de coma)
+\end{verbatim}
+
+\begin{quote}
+💡 \textbf{ALTHOUGH vs DESPITE --- El contraste más evaluado:}
+
+\begin{verbatim}
+ALTHOUGH  +  frase completa (sujeto + verbo):
+"Although it was raining, we went out."
+
+DESPITE / IN SPITE OF  +  sustantivo o -ING:
+"Despite the rain, we went out."
+"In spite of raining heavily, we went out."
+\end{verbatim}
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{🎯 CAUSA Y EFECTO}\label{causa-y-efecto}
+
+\begin{verbatim}
+Therefore        →  Por lo tanto (consecuencia lógica)
+As a result      →  Como resultado
+Consequently     →  Consecuentemente
+Hence            →  De ahí que (muy formal)
+Thus             →  Así pues (formal)
+Due to           →  Debido a (+ nombre)
+Owing to         →  Debido a (formal, + nombre)
+Because of       →  A causa de (+ nombre)
+Since / As       →  Ya que / Dado que (+ frase)
+So               →  Así que (informal)
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{📝 EJEMPLIFICAR}\label{ejemplificar}
+
+\begin{verbatim}
+For example      →  Por ejemplo
+For instance     →  Por ejemplo (más formal)
+Such as          →  Como (por ejemplo): "fruits such as apples"
+Including        →  Incluyendo
+Namely           →  A saber / Es decir (lista específica)
+In particular    →  En particular
+Specifically     →  Específicamente
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{📋 SECUENCIAR IDEAS}\label{secuenciar-ideas}
+
+\begin{verbatim}
+First of all     →  En primer lugar
+To begin with    →  Para empezar
+Firstly / Secondly / Finally → Primero / Segundo / Finalmente
+Then / Next      →  Luego / A continuación
+Subsequently     →  Posteriormente (formal)
+Meanwhile        →  Mientras tanto
+Eventually       →  Finalmente / al cabo de un tiempo
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{🏁 CONCLUIR}\label{concluir}
+
+\begin{verbatim}
+To conclude      →  Para concluir
+To sum up        →  Para resumir
+In conclusion    →  En conclusión
+All in all       →  En definitiva
+On the whole     →  En general
+Overall          →  En general / Globalmente
+Taking everything into consideration → Considerándolo todo
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{💡 Tabla Rápida --- Nivel de
+Formalidad}\label{tabla-ruxe1pida-nivel-de-formalidad}
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule\noalign{}
+Conector & Equivalente informal & Nivel \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Furthermore & Also & ⭐⭐⭐ Muy formal \\
+Nevertheless & But & ⭐⭐⭐ Muy formal \\
+Therefore & So & ⭐⭐⭐ Formal \\
+However & But & ⭐⭐ Formal \\
+Although & But & ⭐⭐ Semi-formal \\
+In addition & And & ⭐⭐ Semi-formal \\
+\end{longtable}
+
+\chapter{CAPÍTULO 19 B2 Writing --- Guía
+Completa}\label{capuxedtulo-19-b2-writing-guuxeda-completa}
+
+\emph{Todo lo que necesitas para brillar en el writing}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{quote}
+\subsection{🎯 Idea Central}\label{idea-central-17}
+
+El writing del B2 evalúa: \textbf{organización, variedad gramatical,
+vocabulario avanzado, registro adecuado y cohesión.} No es solo escribir
+sin errores --- es escribir con \textbf{impacto.}
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{📧 FORMAL EMAIL / LETTER}\label{formal-email-letter}
+
+\begin{verbatim}
+ESTRUCTURA:
+┌─────────────────────────────────────────────┐
+│  Saludo formal                               │
+│  Párrafo 1: motivo de la carta/email         │
+│  Párrafo 2: desarrollo / detalles            │
+│  Párrafo 3: petición / solución              │
+│  Despedida formal                            │
+└─────────────────────────────────────────────┘
+
+SALUDOS:
+Dear Mr / Mrs / Ms [Apellido],   →  (si conoces el nombre)
+Dear Sir / Madam,                →  (si no conoces el nombre)
+
+PRIMERA FRASE:
+"I am writing with regard to..."
+"I am writing to enquire about..."
+"I am writing to complain about..."
+"I am writing in response to your advertisement..."
+"Further to our recent conversation, I am writing to..."
+
+FRASES ÚTILES EN EL CUERPO:
+"I would be grateful if you could..."
+"I would appreciate it if..."
+"Please do not hesitate to contact me..."
+"I look forward to hearing from you."
+"I would like to draw your attention to..."
+"I am afraid I must express my dissatisfaction with..."
+
+DESPEDIDAS:
+Yours sincerely,   →  (si usaste nombre: Dear Mr Smith)
+Yours faithfully,  →  (si usaste Dear Sir/Madam)
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{📰 ESSAY --- Opinion /
+Argumentative}\label{essay-opinion-argumentative}
+
+\begin{verbatim}
+ESTRUCTURA:
+┌─────────────────────────────────────────────┐
+│  Introducción: presenta el tema              │
+│               enuncia tu postura             │
+│  Párrafo 2: primer argumento + ejemplo       │
+│  Párrafo 3: segundo argumento + ejemplo      │
+│  Párrafo 4: argumento contrario + refutación │
+│  Conclusión: resume y reafirma postura       │
+└─────────────────────────────────────────────┘
+
+INTRODUCCIÓN:
+"It is widely believed that..."
+"In recent years, the issue of... has become increasingly relevant."
+"There is no doubt that... is one of the most controversial topics today."
+"The question of whether... has long been debated."
+
+DESARROLLAR ARGUMENTOS:
+"One of the main advantages of... is..."
+"A key argument in favour of... is..."
+"Furthermore, it should be noted that..."
+"Research has shown that..."
+"This is clearly demonstrated by..."
+
+ARGUMENTO CONTRARIO:
+"Critics argue that... However, this view fails to consider..."
+"While it is true that..., the fact remains that..."
+"Opponents claim that... Nevertheless..."
+
+CONCLUSIÓN:
+"Taking everything into consideration, I firmly believe that..."
+"All things considered, it seems clear that..."
+"On balance, the advantages clearly outweigh the disadvantages."
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{📖 ARTICLE}\label{article}
+
+\begin{verbatim}
+ESTRUCTURA:
+┌─────────────────────────────────────────────┐
+│  Título llamativo (pregunta o gancho)        │
+│  Introducción que engancha al lector         │
+│  Párrafos de desarrollo                      │
+│  Conclusión con llamada a la acción          │
+└─────────────────────────────────────────────┘
+
+CARACTERÍSTICAS:
+- Tono puede ser semi-formal o informal
+- Dirígete al lector directamente:
+  "Have you ever wondered...?"
+  "You might be surprised to learn that..."
+  "Think about the last time you..."
+- Usa anécdotas y ejemplos concretos
+- Título con juego de palabras o pregunta
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{📝 REPORT}\label{report}
+
+\begin{verbatim}
+ESTRUCTURA:
+┌─────────────────────────────────────────────┐
+│  TITLE: Report on [tema]                    │
+│  INTRODUCTION: objetivo del informe          │
+│  FINDINGS: resultados / hallazgos            │
+│  CONCLUSIONS: conclusiones                   │
+│  RECOMMENDATIONS: recomendaciones            │
+└─────────────────────────────────────────────┘
+
+FRASES TÍPICAS:
+"The aim of this report is to..."
+"The findings suggest that..."
+"It is recommended that..."
+"Based on the data collected, it can be concluded that..."
+"The evidence indicates that..."
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{🔥 Los 5 Mandamientos del B2
+Writing}\label{los-5-mandamientos-del-b2-writing}
+
+\begin{verbatim}
+1.  Varía tu vocabulario — nunca repitas la misma palabra dos veces
+2.  Usa al menos 3 tiempos verbales diferentes en tu texto
+3.  Incluye estructuras pasivas y modales
+4.  Conecta cada párrafo con un conector apropiado
+5.  Adapta el REGISTRO al tipo de texto (formal/informal)
+\end{verbatim}
+
+\chapter{CAPÍTULO 20 Vocabulario Avanzado
+B2}\label{capuxedtulo-20-vocabulario-avanzado-b2}
+
+\emph{Las palabras que el examen espera ver}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{quote}
+\section{Idea Central}\label{idea-central-18}
+
+El B2 penaliza la repetición. La riqueza léxica es uno de los criterios
+de evaluación. \textbf{Aprende familias de sinónimos, no palabras
+aisladas.}
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Sinónimos Esenciales --- Los Más
+Evaluados}\label{sinuxf3nimos-esenciales-los-muxe1s-evaluados}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{En lugar de GOOD:}\label{en-lugar-de-good}
+
+\begin{verbatim}
+excellent, outstanding, remarkable, beneficial,
+advantageous, effective, valuable, significant,
+commendable, impressive, worthwhile, productive
+\end{verbatim}
+
+\subsection{En lugar de BAD:}\label{en-lugar-de-bad}
+
+\begin{verbatim}
+detrimental, harmful, damaging, negative,
+problematic, concerning, disadvantageous,
+counterproductive, adverse, unfavourable
+\end{verbatim}
+
+\subsection{En lugar de BIG /
+IMPORTANT:}\label{en-lugar-de-big-important}
+
+\begin{verbatim}
+significant, substantial, considerable, extensive,
+enormous, vast, major, large-scale, crucial, vital,
+essential, fundamental, key, critical, paramount
+\end{verbatim}
+
+\subsection{En lugar de THINK:}\label{en-lugar-de-think}
+
+\begin{verbatim}
+believe, consider, argue, suggest, claim,
+maintain, contend, feel, reckon (informal),
+assert, acknowledge, recognize, propose
+\end{verbatim}
+
+\subsection{En lugar de SHOW:}\label{en-lugar-de-show}
+
+\begin{verbatim}
+demonstrate, reveal, indicate, suggest,
+highlight, illustrate, prove, confirm,
+reflect, imply, signify, establish
+\end{verbatim}
+
+\subsection{En lugar de INCREASE:}\label{en-lugar-de-increase}
+
+\begin{verbatim}
+rise, grow, expand, surge, soar, escalate,
+climb, develop, improve, enhance, boost
+\end{verbatim}
+
+\subsection{En lugar de DECREASE:}\label{en-lugar-de-decrease}
+
+\begin{verbatim}
+fall, drop, decline, reduce, diminish,
+shrink, plummet, deteriorate, worsen
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Vocabulario Temático --- Los Temas del
+B2}\label{vocabulario-temuxe1tico-los-temas-del-b2}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{MEDIO AMBIENTE}\label{medio-ambiente}
+
+\begin{verbatim}
+climate change          →  cambio climático
+global warming          →  calentamiento global
+greenhouse gases        →  gases de efecto invernadero
+renewable energy        →  energía renovable
+carbon footprint        →  huella de carbono
+biodiversity            →  biodiversidad
+deforestation           →  deforestación
+sustainable             →  sostenible
+environmentally friendly→  respetuoso con el medioambiente
+\end{verbatim}
+
+\subsection{TECNOLOGÍA}\label{tecnologuxeda}
+
+\begin{verbatim}
+artificial intelligence →  inteligencia artificial
+data privacy            →  privacidad de datos
+social media            →  redes sociales
+digital divide          →  brecha digital
+cybersecurity           →  ciberseguridad
+remote work             →  trabajo a distancia
+automation              →  automatización
+\end{verbatim}
+
+\subsection{SALUD Y SOCIEDAD}\label{salud-y-sociedad}
+
+\begin{verbatim}
+mental health           →  salud mental
+well-being              →  bienestar
+healthcare system       →  sistema sanitario
+work-life balance       →  equilibrio vida-trabajo
+inequality              →  desigualdad
+social cohesion         →  cohesión social
+\end{verbatim}
+
+\chapter{CAPÍTULO 21 Falsos Amigos}\label{capuxedtulo-21-falsos-amigos}
+
+\emph{Las palabras que te traicionan}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{quote}
+\section{Idea Central}\label{idea-central-19}
+
+Los falsos amigos son palabras que \textbf{se parecen} en español e
+inglés pero significan cosas \textbf{completamente diferentes.}
+Apréndetelos: pueden cambiar el sentido de toda una frase.
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Los Falsos Amigos Más
+Peligrosos}\label{los-falsos-amigos-muxe1s-peligrosos}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.1882}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2118}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2471}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.3529}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Palabra inglesa
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Parece significar
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Realmente significa
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Cómo se dice lo que pensabas
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{actually} & actualmente & en realidad & currently, nowadays \\
+\textbf{eventually} & eventualmente & finalmente, al final & possibly,
+perhaps \\
+\textbf{embarrassed} & embarazada & avergonzado/a & pregnant \\
+\textbf{sensible} & sensible (emocional) & sensato, razonable &
+sensitive \\
+\textbf{sensitive} & sensitivo & sensible (emocional) & --- \\
+\textbf{assist} & asistir (ir) & ayudar & attend \\
+\textbf{attend} & atender & asistir (ir a) & serve, help \\
+\textbf{library} & librería & biblioteca & bookshop \\
+\textbf{fabric} & fábrica & tela, tejido & factory \\
+\textbf{carpet} & carpeta & moqueta, alfombra & folder \\
+\textbf{success} & suceso & éxito & event, incident \\
+\textbf{parents} & parientes & padres & relatives \\
+\textbf{college} & colegio (infantil) & universidad/facultad & school \\
+\textbf{pretend} & pretender & fingir, simular & claim, intend \\
+\textbf{realize} & realizar & darse cuenta & carry out, achieve \\
+\textbf{exit} & éxito & salida & success \\
+\textbf{sympathetic} & simpático & comprensivo, empático & nice,
+friendly \\
+\textbf{comprehensive} & comprensivo & exhaustivo, completo &
+understanding \\
+\textbf{lecture} & lectura & clase magistral, conferencia & reading \\
+\textbf{record} & recordar & grabar / récord & remember \\
+\textbf{introduce} & introducir & presentar a alguien & insert, put
+in \\
+\textbf{large} & largo & grande & long \\
+\textbf{actually} & actualmente & de hecho, en realidad & currently \\
+\end{longtable}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{💡 Los Tres Más Usados --- Memorízalos
+Ya}\label{los-tres-muxe1s-usados-memoruxedzalos-ya}
+
+\begin{verbatim}
+ACTUALLY vs CURRENTLY:
+"Actually, I don't agree."  →  En realidad, no estoy de acuerdo.
+"Currently, I work in IT."  →  Actualmente, trabajo en informática.
+
+EMBARRASSED vs PREGNANT:
+"I was so embarrassed."     →  Estaba muy avergonzado/a.
+"She is pregnant."          →  Está embarazada.
+
+SENSIBLE vs SENSITIVE:
+"She's very sensible."      →  Es muy sensata / razonable.
+"He's very sensitive."      →  Es muy sensible (se emociona fácilmente).
+\end{verbatim}
+
+\chapter{CAPÍTULO 22. Pronunciation \& Speaking
+B2}\label{capuxedtulo-22.-pronunciation-speaking-b2}
+
+\emph{Sonar bien sin nacer en Londres}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{quote}
+\subsection{🎯 Idea Central}\label{idea-central-20}
+
+No necesitas acento perfecto. Necesitas ser \textbf{comprensible y
+fluido.} El B2 evalúa fluidez, coherencia y rango de vocabulario --- no
+el acento.
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Los Sonidos que No Existen en
+Español}\label{los-sonidos-que-no-existen-en-espauxf1ol}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{El Sonido /θ/ --- TH sorda (think, three,
+through)}\label{el-sonido-ux3b8-th-sorda-think-three-through}
+
+\begin{verbatim}
+🧠 Pon la punta de la lengua ENTRE los dientes y sopla suavemente.
+   Piensa que estás "empezando a cecear".
+
+think   →  no es "tink" ni "sink"
+three   →  no es "tri" ni "sri"
+through →  no es "tru" ni "sru"
+\end{verbatim}
+
+\subsection{El Sonido /ð/ --- TH sonora (the, this, that,
+brother)}\label{el-sonido-uxf0-th-sonora-the-this-that-brother}
+
+\begin{verbatim}
+🧠 Igual que el anterior pero CON VOZ (vibración en la garganta).
+
+the     →  no es "de" ni "ze"
+this    →  no es "dis"
+brother →  no es "brozer"
+\end{verbatim}
+
+\subsection{El Sonido /æ/ --- A de cat, man,
+black}\label{el-sonido-uxe6-a-de-cat-man-black}
+
+\begin{verbatim}
+🧠 Entre la A y la E españolas, con la boca más abierta.
+   Como si empezaras a decir "e" pero con la boca de "a".
+
+cat   →  /kæt/  (no como la "a" española)
+man   →  /mæn/
+black →  /blæk/
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{El Caos del -OUGH --- 6 Pronunciaciones
+Diferentes}\label{el-caos-del--ough-6-pronunciaciones-diferentes}
+
+\begin{verbatim}
+thought  →  /θɔːt/   (aunque, pensó)
+though   →  /ðəʊ/    (aunque)
+through  →  /θruː/   (a través)
+thorough →  /ˈθʌrə/  (exhaustivo)
+tough    →  /tʌf/    (duro)
+cough    →  /kɒf/    (tos)
+
+🧠 No hay regla. Acéptalo. Memorízalos uno a uno.
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Word Stress --- El Acento que Cambia el
+Significado}\label{word-stress-el-acento-que-cambia-el-significado}
+
+\begin{verbatim}
+Algunas palabras cambian significado según dónde va el acento:
+
+REcord  (nombre) → un disco, un récord
+reCORD  (verbo)  → grabar
+
+PREsent (nombre/adj) → regalo / presente
+preSENT (verbo)      → presentar
+
+PERmit  (nombre) → permiso (documento)
+perMIT  (verbo)  → permitir
+
+OBject  (nombre) → objeto
+obJECT  (verbo)  → objetar
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{B2 Speaking --- Lo Que Dices Cuando No Sabes Qué
+Decir}\label{b2-speaking-lo-que-dices-cuando-no-sabes-quuxe9-decir}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{Ganar Tiempo --- Fillers}\label{ganar-tiempo-fillers}
+
+\begin{verbatim}
+"That's a good question..."
+"Let me think about that for a moment..."
+"Well, to be honest..."
+"I'd say that..."
+"As far as I know..."
+"If I'm not mistaken..."
+"It's difficult to say, but..."
+"I've never really thought about it, but I'd say..."
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{Dar Opiniones}\label{dar-opiniones}
+
+\begin{verbatim}
+"In my opinion / view..."
+"From my perspective..."
+"As far as I'm concerned..."
+"I strongly believe that..."
+"I tend to think that..."
+"Personally, I feel that..."
+"It seems to me that..."
+"I'm convinced that..."
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{Especular --- Muy Importante en
+B2}\label{especular-muy-importante-en-b2}
+
+\begin{verbatim}
+"It looks as if / though..."
+"It seems to me that..."
+"I imagine that..."
+"I would guess that..."
+"She might be... / She could be..."
+"Perhaps / Possibly..."
+"I wouldn't be surprised if..."
+"There's a chance that..."
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{Reformular --- Cuando No Recuerdas la
+Palabra}\label{reformular-cuando-no-recuerdas-la-palabra}
+
+\begin{verbatim}
+"What I mean is..."
+"In other words..."
+"What I'm trying to say is..."
+"It's a bit like..."
+"It's similar to..."
+"It's the kind of thing that..."
+"It's used for... -ing"     ←  para describir un objeto
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{Estructurar Tu Respuesta}\label{estructurar-tu-respuesta}
+
+\begin{verbatim}
+INTRODUCIR:   "First of all... / To begin with..."
+AÑADIR:       "Furthermore... / What's more... / On top of that..."
+CONTRASTAR:   "On the other hand... / Having said that..."
+EJEMPLIFICAR: "For instance... / A good example of this is..."
+CONCLUIR:     "All things considered... / On balance... / Overall..."
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Los 5 Errores Más Comunes en el Speaking
+B2}\label{los-5-errores-muxe1s-comunes-en-el-speaking-b2}
+
+\begin{verbatim}
+1.  ❌  Traducir directamente del español → frases raras
+    ✅  Piensa en ideas, no en traducciones palabra por palabra
+
+2.  ❌  Respuestas de una sola frase
+    ✅  Desarrolla, justifica, da ejemplos: mínimo 3-4 frases
+
+3.  ❌  Usar solo "I think" para todo
+    ✅  Varía: I believe / I feel / I'd argue / It seems to me
+
+4.  ❌  Silencio cuando no sabes qué decir
+    ✅  Usa fillers: "That's an interesting question..."
+
+5.  ❌  Hablar demasiado rápido por nervios
+    ✅  Despacio y claro > rápido e incomprensible
+\end{verbatim}
+
+\bookmarksetup{startatroot}
+
+\chapter{RESUMEN FINAL --- El Mapa
+Completo}\label{resumen-final-el-mapa-completo}
+
+\section{MAPA GRAMATICAL}\label{mapa-gramatical}
+
+\begin{verbatim}
+╔══════════════════════════════════════════════════════════════╗
+║                    MAPA GRAMATICAL COMPLETO                 ║
+╠══════════════════════════════════════════════════════════════╣
+║  📘 A1   To be · Pronombres · Present Simple                ║
+║          Present Continuous · Stative Verbs                 ║
+╠══════════════════════════════════════════════════════════════╣
+║  📗 A2   Past Simple · Past Continuous                      ║
+║          Future: Will / Going to / Present Continuous       ║
+╠══════════════════════════════════════════════════════════════╣
+║  📙 B1   Present Perfect · Present Perfect Continuous       ║
+║          Past Perfect · Modal Verbs completos               ║
+║          Passive Voice · Reported Speech                    ║
+╠══════════════════════════════════════════════════════════════╣
+║  📕 B2   Conditionals (0,1,2,3 + Mixed)                     ║
+║          Relative Clauses · Wish & If Only                  ║
+║          Modal Perfects · Phrasal Verbs                     ║
+║          Linking Words · Writing Skills                     ║
+║          Vocabulario avanzado · Speaking strategies         ║
+╚══════════════════════════════════════════════════════════════╝
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{🎯 Plan de Estudio
+Recomendado}\label{plan-de-estudio-recomendado}
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule\noalign{}
+Semana & Foco & Capítulos \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+1 & Bases y presente & 1, 2, 3, 4 \\
+2 & Pasado y futuro & 5, 6, 7 \\
+3 & Present Perfect & 8, 9, 10 \\
+4 & Modales y Pasiva & 11, 12 \\
+5 & Reported Speech & 13 \\
+6 & Condicionales & 14 \\
+7 & Relative, Wish & 15, 16 \\
+8 & Léxico y Writing & 17, 18, 19, 20 \\
+9 & Falsos amigos y Speaking & 21, 22 \\
+10 & Repaso general + simulacro & Todos \\
+\end{longtable}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{⚡ Chuleta de Emergencia --- Los 10 Puntos Más Evaluados en
+B2}\label{chuleta-de-emergencia-los-10-puntos-muxe1s-evaluados-en-b2}
+
+\begin{verbatim}
+1.  Present Perfect vs Past Simple        → Capítulo 8
+2.  Condicionales (especialmente 2 y 3)   → Capítulo 14
+3.  Reported Speech con backshift         → Capítulo 13
+4.  Passive Voice en todos los tiempos    → Capítulo 12
+5.  Modal Perfects (should have, etc.)    → Capítulo 11
+6.  Relative Clauses con/sin comas        → Capítulo 15
+7.  Wish + tiempos correctos              → Capítulo 16
+8.  Linking Words en writing              → Capítulo 18
+9.  Registro formal en emails/essays      → Capítulo 19
+10. Vocabulario variado (no repetir)      → Capítulo 20
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{quote}
+\section{💬 Nota Final del Autor}\label{nota-final-del-autor}
+
+\emph{Este libro no te da el inglés. Te da las llaves.} \emph{Tú tienes
+que abrir las puertas.}
+
+\emph{Cada vez que cometas un error, recuerda:} \emph{es tu cerebro
+recalibrando.} \emph{Los errores no son fracasos ---} \emph{son el
+sonido que hace tu mente mientras crece.}
+
+\emph{Estudia este libro, pero sobre todo:} \textbf{\emph{habla,
+escribe, escucha, lee.}}
+
+\emph{El B2 no es un nivel. Es una actitud.}
+
+\subsection{Good luck. You've got this.
+🚀}\label{good-luck.-youve-got-this.}
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{verbatim}
+📓 FIN DEL LIBRO DE NOTAS DEFINITIVO — A1 a B2
+   Versión 2.0 — Revisada y Ampliada
+   Hecho con 💙 por un hispanohablante
+   que aprendió a las malas para que tú aprendas a las buenas.
+\end{verbatim}
+
+\bookmarksetup{startatroot}
+
+\chapter*{References}\label{references}
+\addcontentsline{toc}{chapter}{References}
+
+\markboth{References}{References}
+
+\phantomsection\label{refs}
+
+
+\backmatter
+
+
+\end{document}

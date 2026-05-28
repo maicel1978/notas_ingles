@@ -1,0 +1,98 @@
+---
+title: "CAPÍTULO 12 Passive Voice"
+---
+
+*Cuando el QUÉ importa más que el QUIÉN*
+
+---
+
+> ### 🎯 Idea Central
+> Usamos la pasiva cuando:
+> 1. No sabemos quién hizo la acción
+> 2. No importa quién la hizo
+> 3. Es obvio quién la hizo
+> 4. Queremos sonar más **formal o académico**
+
+---
+
+## 📐 La Fórmula Maestra
+
+```
+Sujeto  +  TO BE (tiempo correcto)  +  PARTICIPIO PASADO
+                        ↑
+            Este es el que cambia según el tiempo verbal
+```
+
+---
+
+## 📐 Tabla de Transformación por Tiempos
+
+| Tiempo | Voz Activa | Voz Pasiva |
+|--------|-----------|------------|
+| Present Simple | They make cars here. | Cars **are made** here. |
+| Past Simple | They built this in 1900. | This **was built** in 1900. |
+| Present Continuous | They are filming it. | It **is being filmed.** |
+| Past Continuous | They were repairing it. | It **was being repaired.** |
+| Present Perfect | They have arrested him. | He **has been arrested.** |
+| Past Perfect | They had warned us. | We **had been warned.** |
+| Future (will) | They will announce it. | It **will be announced.** |
+| Modal | They must fix it. | It **must be fixed.** |
+| Infinitive | They want to sell it. | It **is to be sold.** |
+
+---
+
+## 💡 Los 3 Pasos de Transformación
+
+```
+ACTIVA:   The chef    cooks    the meal    every day.
+               ↓         ↓         ↓
+PASIVA:   The meal   IS COOKED  (by the chef)  every day.
+
+Paso 1:  El OBJETO de la activa → SUJETO de la pasiva
+Paso 2:  TO BE se conjuga en el mismo tiempo
+Paso 3:  El verbo → PARTICIPIO PASADO
+         (el agente "by + persona" es opcional)
+```
+
+---
+
+## ✅ Cuándo Usar o No el "By + Agente"
+
+```
+Se OMITE cuando:
+- Es obvio:   "He was arrested."  (por la policía, obvio)
+- No se sabe: "The window was broken."  (no sabemos quién)
+
+Se INCLUYE cuando:
+- Es importante saber quién:
+  "The theory was developed by Einstein."
+  "The novel was written by García Márquez."
+```
+
+---
+
+## ⚠️ Errores Frecuentes
+
+```
+❌  The car was broke.          →  ✅  The car was broken.
+❌  It was builded in 1800.     →  ✅  It was built in 1800.
+❌  The letter has been writed. →  ✅  The letter has been written.
+❌  It was been stolen.         →  ✅  It was stolen. / It has been stolen.
+```
+
+---
+
+## 🔥 Tip para el Examen B2
+
+> La pasiva es **muy frecuente** en writing formal y académico.
+> Aprende estas estructuras de memoria:
+> ```
+> "It is believed that..."          →  Se cree que...
+> "It has been proven that..."      →  Se ha demostrado que...
+> "It is widely accepted that..."   →  Es ampliamente aceptado que...
+> "Research has been conducted..."  →  Se ha realizado una investigación...
+> "The results were published in..."→  Los resultados fueron publicados en...
+> ```
+
+
+

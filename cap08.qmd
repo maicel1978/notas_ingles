@@ -1,0 +1,128 @@
+---
+title: "CAPÍTULO 8 Present Perfect"
+---
+
+*El tiempo que más confunde a los hispanohablantes*
+
+---
+
+> ### 🎯 Idea Central
+> Conecta el **pasado con el presente.**
+> No importa exactamente cuándo pasó.
+> Lo que importa es que **tiene relevancia AHORA.**
+
+---
+
+> ### 🧠 El Gran Problema Español
+> En español decimos:
+> - *"He comido"* → Present Perfect
+> - *"Ayer comí"* → también podría traducirse igual
+>
+> El inglés **separa estas dos cosas radicalmente:**
+> - Sin tiempo definido → **Present Perfect**
+> - Con tiempo definido del pasado → **Past Simple**
+>
+> **Ahí está todo el lío. Y ahora ya lo sabes.**
+
+---
+
+## 📐 La Fórmula
+
+```
+Sujeto  +  HAVE / HAS  +  PARTICIPIO PASADO
+
+I / You / We / They   →  HAVE
+He / She / It         →  HAS
+
+(+)  I have eaten.          /  She has left.
+(-)  I haven't eaten.       /  She hasn't left.
+(?)  Have you eaten?        /  Has she left?
+```
+
+---
+
+## 💡 Los Participios Irregulares Más Importantes
+
+```
+be    → been        go    → gone        do    → done
+have  → had         see   → seen        take  → taken
+give  → given       write → written     eat   → eaten
+fall  → fallen      speak → spoken      break → broken
+buy   → bought      think → thought     bring → brought
+make  → made        come  → come        run   → run
+know  → known       grow  → grown       show  → shown
+```
+
+---
+
+## ✅ Las Señales de Tiempo del Present Perfect
+
+```
+just       →  acabar de:        "I've just eaten."
+ever       →  alguna vez:       "Have you ever been to Japan?"
+never      →  nunca:            "I've never tried sushi."
+already    →  ya:               "She's already left."
+yet        →  todavía / ya:     "I haven't finished yet." / "Have you eaten yet?"
+since      →  desde:            "I've lived here since 2010."
+for        →  durante:          "I've lived here for 5 years."
+recently   →  recientemente:    "I've recently started running."
+lately     →  últimamente:      "Have you been okay lately?"
+so far     →  hasta ahora:      "So far, I've read 3 chapters."
+```
+
+---
+
+## 💡 Truco — SINCE vs FOR
+
+```
+SINCE  →  punto específico en el tiempo (cuándo empezó)
+FOR    →  duración (cuánto tiempo lleva)
+
+SINCE:   since 2010 / since Monday / since I was a child / since we met
+FOR:     for 5 years / for two months / for a long time / for ages
+
+🧠  SINCE = Since a Specific moment
+🧠  FOR   = FOR a duration (cantidad de tiempo)
+```
+
+---
+
+## 💡 La Regla de Oro — Perfect vs Simple
+
+```
+┌─────────────────────────────────────────────────────────┐
+│  ¿Hay tiempo DEFINIDO del pasado en la frase?           │
+│  (yesterday, last week, in 2010, ago, when I was...)    │
+│                                                         │
+│  SÍ  →  PAST SIMPLE                                     │
+│  NO  →  PRESENT PERFECT                                 │
+└─────────────────────────────────────────────────────────┘
+```
+
+---
+
+## ✅ Tabla Comparativa — Perfect vs Simple
+
+| Present Perfect | Past Simple |
+|----------------|-------------|
+| I've lost my keys. *(siguen perdidas)* | I lost my keys yesterday. |
+| She's broken her arm. | She broke her arm in 2020. |
+| Have you ever eaten Thai food? | Did you eat Thai food last night? |
+| He's written three novels. *(logro)* | He wrote his first novel in 2005. |
+
+---
+
+## ⚠️ Error Crítico — El Más Común
+
+```
+❌  I have seen her yesterday.
+✅  I saw her yesterday.
+
+❌  Did you ever try sushi?
+✅  Have you ever tried sushi?
+
+❌  I have gone to Paris in 2015.
+✅  I went to Paris in 2015.
+```
+
+

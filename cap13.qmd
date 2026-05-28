@@ -1,0 +1,113 @@
+---
+title: "CAPÍTULO 13 Reported Speech"
+---
+
+*"Me dijeron que..." — El arte de contar lo que dijo alguien*
+
+---
+
+> ### 🎯 Idea Central
+> Cuando reportas lo que alguien dijo,
+> el tiempo verbal **retrocede un paso** en el pasado.
+> Es como si el tiempo "se alejara" un nivel.
+
+---
+
+## 💡 La Escalera del Tiempo — Backshift
+
+```
+╔══════════════════════════════════════════════════════════╗
+║  DIRECT SPEECH          →    REPORTED SPEECH            ║
+╠══════════════════════════════════════════════════════════╣
+║  Present Simple         →    Past Simple                 ║
+║  "I work here."              She said she worked there.  ║
+╠══════════════════════════════════════════════════════════╣
+║  Present Continuous     →    Past Continuous             ║
+║  "I am working."             She said she was working.   ║
+╠══════════════════════════════════════════════════════════╣
+║  Past Simple            →    Past Perfect                ║
+║  "I worked hard."            She said she had worked.    ║
+╠══════════════════════════════════════════════════════════╣
+║  Present Perfect        →    Past Perfect                ║
+║  "I have seen it."           She said she had seen it.   ║
+╠══════════════════════════════════════════════════════════╣
+║  Will                   →    Would                       ║
+║  "I will call."              She said she would call.    ║
+╠══════════════════════════════════════════════════════════╣
+║  Can                    →    Could                       ║
+║  "I can help."               She said she could help.    ║
+╠══════════════════════════════════════════════════════════╣
+║  May                    →    Might                       ║
+║  "I may come."               She said she might come.    ║
+╠══════════════════════════════════════════════════════════╣
+║  Must                   →    Had to                      ║
+║  "I must go."                She said she had to go.     ║
+╚══════════════════════════════════════════════════════════╝
+```
+
+---
+
+## 💡 También Cambian las Expresiones de Tiempo y Lugar
+
+```
+here         →  there
+now          →  then
+today        →  that day
+tomorrow     →  the next day / the following day
+yesterday    →  the day before / the previous day
+this         →  that
+these        →  those
+...ago       →  ...before
+next week    →  the following week
+last week    →  the previous week
+```
+
+---
+
+## 📐 Reported Questions — Cuidado con el Orden
+
+```
+Wh- Questions:
+Direct:   "Where do you live?" he asked.
+Reported: He asked where I lived.
+                              ↑
+                    orden afirmativo (sin inversión)
+                    + tiempo atrás
+
+Yes/No Questions  →  IF o WHETHER:
+Direct:   "Are you coming?" she asked.
+Reported: She asked if / whether I was coming.
+```
+
+---
+
+## 📐 Reported Orders e Instrucciones
+
+```
+Órdenes:
+"Open the window!"     →  He told me TO OPEN the window.
+"Don't touch that!"    →  She told me NOT TO TOUCH that.
+
+Peticiones:
+"Please help me."      →  She asked me TO HELP her.
+
+Consejo:
+"You should rest."     →  He advised me TO REST.
+```
+
+---
+
+## ⚠️ Errores Típicos
+
+```
+❌  He said me that he was tired.   →  ✅  He told me that he was tired.
+❌  She said that she is tired.     →  ✅  She said that she was tired.
+❌  He asked where did I live.      →  ✅  He asked where I lived.
+```
+
+> 🧠 **SAY vs TELL:**
+> ```
+> SAY  →  sin objeto directo de persona:  He said (that)...
+> TELL →  con objeto directo de persona:  He told ME (that)...
+> ```
+
