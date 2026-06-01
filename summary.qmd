@@ -28,7 +28,7 @@ title: "RESUMEN FINAL — El Mapa Completo"
 
 ------------------------------------------------------------------------
 
-## 🎯 Plan de Estudio Recomendado
+## Plan de Estudio Recomendado
 
 | Semana | Foco                       | Capítulos      |
 |--------|----------------------------|----------------|
@@ -45,7 +45,7 @@ title: "RESUMEN FINAL — El Mapa Completo"
 
 ------------------------------------------------------------------------
 
-## ⚡ Chuleta de Emergencia — Los 10 Puntos Más Evaluados en B2
+## Chuleta de Emergencia — Los 10 Puntos Más Evaluados en B2
 
 ```         
 1.  Present Perfect vs Past Simple        → Capítulo 8
