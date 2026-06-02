@@ -1,6 +1,22 @@
 # Preface {.unnumbered}
 
-This is a Quarto book.
+---
 
-*Por un hispanohablante, para hispanohablantes*
+> **Nota del autor:** Este no es un libro de texto definitivo ni un manual académico de la lengua inglesa. Es un cuaderno de trabajo dinámico, experimental y personal.
+
+Bienvenido a **Notas de Inglés**. Este proyecto nace de la recopilación y estructuración de mis apuntes de inglés básico durante la carrera de Medicina. 
+
+### ¿Por qué este libro?
+* **De un hispanohablante para hispanohablantes:** Está diseñado desde la perspectiva de quien comparte los mismos códigos conceptuales y las mismas dificultades comunes al aprender el idioma desde el español.
+* **Enfoque práctico:** El contenido está orientado a revisar y consolidar las estructuras esenciales del idioma, aplicadas de manera accesible.
+* **Propósito experimental:** Más allá del idioma, este proyecto es un ejercicio técnico de documentación abierta utilizando **Quarto**. 
+
+### Filosofía del proyecto
+Este es un espacio vivo. Se publica de manera abierta bajo la premisa de aprender en público. Si eres estudiante de ciencias médicas o simplemente alguien buscando repasar las bases gramaticales, puedes usar este material como referencia o punto de partida. 
+
+Al ser un documento en constante revisión y perfeccionamiento, los errores son parte del camino. Si encuentras algún detalle que pueda mejorarse o expandirse, te invito a colaborar o a seguir la evolución del proyecto directamente en el repositorio principal.
+
+---
+
+*Puedes explorar el proyecto completo y su código fuente en: [maicel1978.github.io/notas_ingles/](https://maicel1978.github.io/notas_ingles/)*
 
