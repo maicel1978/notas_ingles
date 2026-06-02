@@ -7,8 +7,8 @@ date-format: long              # Asegura un formato elegante de fecha en españo
 
 book:
   title: "El libro de notas de inglés"
-  subtitle: "De A1 a C1 — El libro de notas de la carrera"
-  author: "Maicel monzon"
+  subtitle: "De A1 a C1 — El libro de notas de inglés de la carrera"
+  author: "Maicel Monzón"
   date: today
   cover-image: images/cover.png
   page-navigation: true
