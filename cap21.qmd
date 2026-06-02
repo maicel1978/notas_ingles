@@ -1,5 +1,5 @@
 ---
-title: "CAPÍTULO 21 Falsos Amigos"
+title: "Falsos Amigos"
 ---
 
 *Las palabras que te traicionan*
