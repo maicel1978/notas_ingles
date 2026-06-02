@@ -1,41 +1,37 @@
 project:
   type: book
-  output-dir: _book
+  output-dir: docs             # Cambiado de _book a docs para activar GitHub Pages directamente
 
 lang: es
+date-format: long              # Asegura un formato elegante de fecha en español
 
 book:
   title: "El libro de notas de inglés"
-  subtitle: "De A1 a C1 — El libro que ojalá hubiera existido antes"
-  author: "Maicel Maicel"
+  subtitle: "De A1 a C1 — El libro de notas de la carrera"
+  author: "Maicel monzon"
   date: today
-
   cover-image: images/cover.png
-
   page-navigation: true
   search: true
-
+  
   downloads:
     - pdf
     - epub
-
+    
   chapters:
     - index.qmd
     - intro.qmd
-
     - part: "📘 Parte 1: Nivel A1"
       chapters:
         - cap01.qmd
         - cap02.qmd
         - cap03.qmd
         - cap04.qmd
-
     - part: "📗 Parte 2: Nivel A2"
       chapters:
         - cap05.qmd
         - cap06.qmd
         - cap07.qmd
-
     - part: "📙 Parte 3: Nivel B1"
       chapters:
         - cap08.qmd
@@ -44,7 +40,6 @@ book:
         - cap11.qmd
         - cap12.qmd
         - cap13.qmd
-
     - part: "📕 Parte 4: Nivel B2"
       chapters:
         - cap14.qmd
@@ -56,7 +51,6 @@ book:
         - cap20.qmd
         - cap21.qmd
         - cap22.qmd
-
     - summary.qmd
     - references.qmd
 
@@ -69,17 +63,19 @@ format:
       dark: darkly
     toc: true
     toc-depth: 3
-    number-sections: false
-    number-depth: 2
+    number-sections: false     # Excelente elección para libros de idiomas
     smooth-scroll: true
     code-copy: true
     code-overflow: wrap
     css: styles.css
-
+    lightbox: true             # Activa zoom nativo y elegante en imágenes
+    anchor-sections: true
+    
   epub:
     toc: true
     cover-image: images/cover.png
-
+    mathml: true               # Maximiza compatibilidad de fórmulas en lectores electrónicos
+    
   pdf:
     documentclass: scrbook
     pdf-engine: lualatex
@@ -95,8 +91,5 @@ format:
     include-in-header:
       text: |
         \usepackage{emoji}
-
-editor: visual
-
-execute:
-  freeze: auto
+        \usepackage{fontspec}
+        \setmainfont{Arial}

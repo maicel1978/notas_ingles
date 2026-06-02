@@ -2,42 +2,37 @@
 title: "Antes de empezar"
 ---
 
+::: {.callout-note appearance="simple"}
+### 💬 Antes de empezar
+Este libro no es un libro de texto frío y aburrido.
+Es tu mejor amigo que ya aprendió inglés y te está contando **todos los secretos.**
 
-> ### 💬 Antes de empezar
-> Este libro no es un libro de texto frío y aburrido.
-> Es tu mejor amigo que ya aprendió inglés y te está contando **todos los secretos.**
->
-> Léelo como si fuera una conversación, no como un manual de instrucciones.
-> Cada página tiene un propósito: **que aprendas el doble en la mitad del tiempo.**
-
----
-
-> ### 🗺️ Cómo usar este libro
-> | Símbolo | Significa |
-> |---------|-----------|
-> | 🎯 | La idea central — léela primero siempre |
-> | 📐 | La fórmula o estructura gramatical |
-> | 💡 | Truco mnemotécnico — esto lo recordarás siempre |
-> | ✅ | Ejemplos correctos |
-> | ⚠️ | Error típico del hispanohablante |
-> | 🔥 | Tip directo para el examen |
-> | 🧠 | Momento de reflexión profunda |
-> | 📝 | Mini ejercicio mental |
+Léelo como si fuera una conversación, no como un manual de instrucciones.
+Cada página tiene un propósito: **que aprendas el doble en la mitad del tiempo.**
+:::
 
 ---
 
-> ### ⚡ Progreso del libro
->
-> | Nivel | Capítulos | Estado |
-> |-------|-----------|--------|
-> | 📘 A1 | 1 — 4 | Bases absolutas |
-> | 📗 A2 | 5 — 7 | Supervivencia |
-> | 📙 B1 | 8 — 13 | Fluidez inicial |
-> | 📕 B2 | 14 — 22 | Dominio real |
+### 🗺️ Cómo usar este libro
+
+| Símbolo | Significa |
+|:---:|---|
+| 🎯 | La idea central — léela primero siempre |
+| 📐 | La fórmula o estructura gramatical |
+| 💡 | Truco mnemotécnico — esto lo recordarás siempre |
+| ✅ | Ejemplos correctos |
+| ⚠️ | Error típico del hispanohablante |
+| 🔥 | Tip directo para el examen |
+| 🧠 | Momento de reflexión profunda |
+| 📝 | Mini ejercicio mental |
 
 ---
 
-# 📘 PARTE 1: NIVEL A1
-## *"Las bases que nadie te explica bien"*
+### ⚡ Progreso del libro
 
-
+| Nivel | Capítulos | Estado |
+|:---:|:---:|---|
+| 📘 A1 | 1 — 4 | Bases absolutas |
+| 📗 A2 | 5 — 7 | Supervivencia |
+| 📙 B1 | 8 — 13 | Fluidez inicial |
+| 📕 B2 | 14 — 22 | Dominio real |
